@@ -1,0 +1,46 @@
+Mortality rate for children by country 
+Malnutrition rate for children by country 
+Malnutrition AND Mortality by country 
+Access to clean water AND Malnutrition AND Mortality by country 
+GDP to clean water 
+- 5-17 
+- Tipologie di malnutrizione
+-V- overeating 
+-V- poor eating 
+-- unusual choices (pica)  
+-- unhealthy food choices 
+incidenza tipi malnutrizione globale su bambini 5-19 
+bar/chart
+
+-V- undernutrition (wasting, stunting, underweigth) malnutrition_estimates.csv, Joint-Malnutrition-Estimates-Regional-and-Global-Estimates-April-2021.xlsx, JME_Country_Estimates_April_2021_v3.xlsx
+-- inadequate (vitamins, minerals, micronutrients (iodine, vitamin A, iron))  
+
+
+effects: 
+- patologies 
+-V- % cardiovascular diseases 
+-V- % diabetes II 
+-V- % liver problems 
+-V- % high developments (femoral epiphisis, bone growths, early puberty, polycistic) 
+-V- % asthma 
+
+???
+
+mappa con tutti i paesi e tasso di mortalità
+
+
+- general issues (poor diet related) 
+-- % costipation/ bowel habits 
+-- % paleness / letargic 
+-- % tooth decay
+-- % poor physical growth 
+
+- resulting diet related non communicable diseases 
+-- % behavioral problems 
+-- % sleep issues 
+-- % emotional and psychological changes 
+-- % poor concentration, difficulties in school
+
+- legal section 
+-- 1/04/2016: general assembly UN: decade of action and nutrion 2015-2020
+-- 
