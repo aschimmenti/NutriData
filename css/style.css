@@ -238,6 +238,8 @@ html{
   scroll-behavior: smooth;
 }
 
+
+
 .slider_section .detail-box a:hover {
   background-color: transparent;
   color: #133e3f;
@@ -933,6 +935,10 @@ html{
 
 .footer_section a {
   color: #787878;
+}
+
+.footer_section a:hover {
+  color: #fdda6e;
 }
 
 /* end footer section*/
