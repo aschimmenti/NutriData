@@ -12,20 +12,20 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>NutriData</title>
+  <title>OpenNutrition</title>
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  
   <!-- fonts style -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,600,700&display=swap" rel="stylesheet" />
   <!-- Custom styles for this template -->
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
   <style>
     #chartdiv {
       width: 100%;
@@ -44,7 +44,7 @@
             <h3>
               Nutri
             </h3>
-            <span> Data</span>
+            <span> data</span>
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -56,7 +56,7 @@
                 <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html"> Documentation </a>
+                <a class="nav-link" href="documentation.html"> Documentation </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="metadata.html"> Metadata </a>
@@ -64,9 +64,7 @@
               <li class="nav-item active">
                 <a class="nav-link" href="visualizations.html"> Visualizations </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html"> Contact us </a>
-              </li>
+              
               <li class="nav-item">
                 <a class="nav-link" href="login.html"></a>
               </li>
@@ -84,21 +82,20 @@
     <div class="container">
       <div class="heading_container">
         <h3>
-          Events
+          Visualizations
         </h3>
         <p>
-          Upcoming Education Events to feed your brain.
+          Explore our paths 
         </p>
       </div>
       <div class="event_container">
-        <div id="nations-button"></div>
-        <div id="chart-parent"></div>
+        <!-- <div class="box"> --> 
+          <div id="nations-button"></div>
+          <div id="chart-parent"></div>
+        <!-- </div> --> 
+        </div>
       </div>
-      <div class="btn-box">
-        <a href="">
-          Read More
-        </a>
-      </div>
+      
     </div>
   </section>
 
@@ -118,58 +115,33 @@
                 <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html"> About </a>
+                <a class="nav-link" href="documentation.html"> Documentation </a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="metadata.html"> Metadata </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="course.html"> Courses </a>
+                <a class="nav-link" href="visualizations.html"> Visualizations </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="event.html"> Events </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="login.html">Login</a>
-              </li>
+            
             </ul>
           </div>
         </div>
-        <div class="col-md-3">
-          <div class="info_course">
-            <h5>
-              TOP RATED COURSE
-            </h5>
-            <p>
-              There are many variations of passages of Lorem Ipsum available,
-              but the majority have suffered alteration in some form, by
-              injected humou
-            </p>
-          </div>
-        </div>
+       
 
         <div class="col-md-5 offset-md-1">
           <div class="info_news">
             <h5>
-              FOR ANY QUERY, PLEASE WRITE TO US
+              TO KNOW MORE ABOUT US 
             </h5>
             <div class="info_contact">
-              <a href="">
-                Location
+              
+              <a href="https://github.com/aschimmenti/NutriData" target="_blank">
+                Github Repository
               </a>
-              <a href="">
-                demo@gmail.com
-              </a>
-              <a href="">
-                Call : +01 1234567890
-              </a>
+              
             </div>
-            <form action="">
-              <input type="text" placeholder="Enter Your email" />
-              <button>
-                Subscribe
-              </button>
-            </form>
+            
           </div>
         </div>
       </div>
@@ -181,37 +153,45 @@
   <!-- footer section -->
   <footer class="container-fluid footer_section">
     <p>
-      NutriData &copy; 2021
-
+      OpenNutrition &copy; 2021
+      <a href=""></a>
     </p>
+
   </footer>
+
+
   <footer class="container-fluid footer_section">
 
-    <p>
+      <p>
+        Created by Amanda Culoma, Andrea Schimmenti, Ariele Santello and Giulia Massimino <br> for the final project of the Open Access and Digital Ethics course held by Monica Palmirani - master degree course DHDK - University of Bologna.
+      <br>
+      <br>
       This work is licensed under a <a href="https://creativecommons.org/licenses/by-sa/4.0/" >Creative Commons Attribution-ShareAlike 4.0 International License.</a>
       <br>
       <br>
       <a rel="license" target="blank" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"></a>
       <br>
-    </p>
+      <br>
+      </p>
 
-</footer>
+
+  </footer>
   <!-- footer section -->
 
 <!--  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script> -->
   <script type="text/javascript" src="js/bootstrap.js"></script>
 
   <!-- Resources -->
-    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
-    <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
-    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="js/barchart.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="js/barchart.js"></script>
 
 </body>
 
