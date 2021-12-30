@@ -397,8 +397,8 @@ html{
 
 .course_section .course_container .course_content .box {
   position: relative;
-  -ms-flex-preferred-size: 31%;
-      flex-basis: 31%;
+  -ms-flex-preferred-size: 51%;
+      flex-basis: 51%;
   margin: 1%;
   border-radius: 10px;
   overflow: hidden;
