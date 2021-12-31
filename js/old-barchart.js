@@ -1,18 +1,15 @@
 $( document ).ready(function() {
-    getNationsBarchart()
+    getNations()
 })
 
-function cleanBarDiv() {
-    $('#map-nation-title').empty()
-    $('#barchart-nation-title').empty()
-    $('#line-nation-title').empty()
-    $('#barchart-parent').empty()
-    $('#barchart-parent').append('<div id="barchartdiv"></div>')
+function cleanDiv() {
+    $('#chart-parent').empty();
+    $('#chart-parent').append('<div id="chartdiv"></div>')
 }
 
-function getNationsBarchart() {
-    $('#nations-button-barchart').empty()
-    $('#nations-button-barchart').append(`
+function getNations() {
+    $('#nations-button').empty()
+    $('#nations-button').append(`
     <div class="dropdown">
     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       Choose nation
@@ -21,7 +18,7 @@ function getNationsBarchart() {
   
     </div>
   </div>`)
-    $.getJSON('barchart-new-merge.json',function(jsondata){
+    $.getJSON('barchart-jsons/barchart-new-merge.json',function(jsondata){
       var nations = Object.keys(jsondata)
       console.log(nations)
       $.each(nations, function(idx, n) {
@@ -34,8 +31,7 @@ function getNationsBarchart() {
 
 
 function getChart(input) {
-    cleanBarDiv()
-    barchartTitle(input)
+    cleanDiv()
     am5.ready(function() {
     // Data
     var omegaData = {
@@ -16991,7 +16987,7 @@ function getChart(input) {
     var allData = omegaData[input]
     // Create root element
     // https://www.amcharts.com/docs/v5/getting-started/#Root_element
-    var root = am5.Root.new("barchartdiv");
+    var root = am5.Root.new("chartdiv");
     
     root.numberFormatter.setAll({
       numberFormat: "#a",
@@ -17006,7 +17002,7 @@ function getChart(input) {
       smallNumberPrefixes: []
     });
     
-    var stepDuration = 1000;
+    var stepDuration = 2000;
     
     
     // Set themes
@@ -17138,7 +17134,7 @@ function getChart(input) {
             dataItem.animate({
               key: "deltaPosition",
               to: 0,
-              duration: stepDuration / 20,
+              duration: stepDuration / 2,
               easing: am5.ease.out(am5.ease.cubic)
             });
           }
@@ -17223,13 +17219,3 @@ function getChart(input) {
     
     }); // end am5.ready()
     }
-
-function capitalizeFirstLetter(string) {
-    return string.charAt(0).toUpperCase() + string.slice(1);
-    }
-    
-    function barchartTitle(input) {
-    $('#barchart-nation-title').empty()
-    $('#barchart-nation-title').html(`${capitalizeFirstLetter(input)}`);
-    }
-      
