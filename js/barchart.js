@@ -6,6 +6,9 @@ function cleanBarDiv() {
     $('#map-nation-title').empty()
     $('#barchart-nation-title').empty()
     $('#line-nation-title').empty()
+    $('#parent1').empty();
+    $('#parent2').empty();
+    $('#mapchart-parent').empty();
     $('#barchart-parent').empty()
     $('#barchart-parent').append('<div id="barchartdiv"></div>')
 }

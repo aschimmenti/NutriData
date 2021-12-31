@@ -28,6 +28,8 @@ function getNationsLinechart() {
 
 
 function graphMortality(nation) {
+    $('#barchart-parent').empty();
+    $('#mapchart-parent').empty();
     $('#map-nation-title').empty()
     $('#barchart-nation-title').empty()
     $('#line-nation-title').empty()
