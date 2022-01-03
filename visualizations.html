@@ -108,70 +108,39 @@
 
   <!-- event section -->
   <section class="viz">
-    <div class="container">
-      <div class="heading_container">
-        <h3 class="viztitle">
-          Visualizations
-        </h3>
-      </div>
-
-      <div class="col-lg-12 col-md-12 col-sm-12 col">
-        <h4>Pathologies - Barchart</h4>
-        <h4 id="barchart-nation-title"></h4>
-        <p>
-          Pathologies caused by malnutrition (per country series). You can see data about asthma, diabetes, livel
-          issues, protein iodine and vitamin A deficiencies.
-        </p>
-        <div id="nations-button-barchart"></div>
-        <div id="barchart-parent">
-          <img class="dummy" src="images/download.png">
-        </div>
-
-      </div>
-
-      <div class="col-lg-12 col-md-12 col-sm-12 col">
-        <h4>World Map on malnutrition conditions per year</h4>
-        <h4 id="map-nation-title"></h4>
-        <div class="row">
-        <div class="col-6">
-        <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Choose malnutrition type
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-            <button onclick="getYears('severe-wasting')" class="dropdown-item" type="button">Severe Wasting</button>
-            <button onclick="getYears('wasting')" class="dropdown-item" type="button">Wasting</button>
-            <button onclick="getYears('stunting')" class="dropdown-item" type="button">Stunting</button>
-            <button onclick="getYears('underweight')" class="dropdown-item" type="button">Underweight</button>
-            <button onclick="getYears('overweight')" class="dropdown-item" type="button">Overweight</button>
+    <div class="heading_container ">
+      <h3 class="viztitle">
+        Visualizations
+      </h3>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-3 col m-0">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Conditions</h5>
+              <p class="card-text">World map on conditions directly caused by poor or wrong nutrition. Select a condition and a year.</p>
+              <button type="button" class="btn btn-info" onclick="mapChartButton();">Show data</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Pathologies</h5>
+              <p class="card-text">Time series barchart showing pathologies correlated to malnutritions. Select a country</p>
+              <button type="button" class="btn btn-info" onclick="getNationsBarchart();">Show data</button>            
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">GDP and Mortality (last 60 years)</h5>
+              <p class="card-text">Linecharts showing time series on GDP and child mortality (5-24). Select a country</p>
+              <button type="button" class="btn btn-info" onclick="getNationsLinechart();">Show data</button>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-6">  
-      <div id="years-button"></div>
-      </div>
-      </div>
-      <div id="mapchart-parent">
-        <img class="dummy" src="images/download.png">
-      </div>
-      </div>
-      
-      <div class="col-lg-12 col-md-12 col-sm-12 col">
-        <div class="row m-0">
-          <div class="col-lg-12 col-md-12 col-sm-12 col m-o p-0">
-            <h4>Graphs about Child Mortality and Gross Domestic Product</h4>
-          </div>
-          <div class="col-lg-12 col-md-12 col-sm-12 col m-o p-0">
-            <h4 id="line-nation-title"></h4>
-          </div>
-          <div id="nations-button-linechart" class="col-lg-12 col-md-6 col-sm-6 col p-0"></div>
-          <div id="parent1" class="col-lg-6 col-md-6 col-sm-6 col  p-0">
-            <img class="dummy" src="images/download.png">
-          </div>
-          <div id="parent2" class="col-lg-6 col-md-6 col-sm-6 col  p-0">
-            <img class="dummy" src="images/download.png">
-          </div>
+      <div class="col-lg-9 col-md-9 col-sm-9 col m-0">
+        <div id="mapchartdropdowns">
+        </div>
         </div>
       </div>
     </div>

@@ -1,3 +1,9 @@
+$( document ).ready(function() {
+  $('#mapchartdropdowns').empty()
+  mapChartButton();
+})
+
+
 function cleanDiv() {
     $('#map-nation-title').empty()
     $('#barchart-nation-title').empty()
@@ -9,11 +15,42 @@ function cleanDiv() {
     $('#mapchart-parent').append('<div id="mapchartdiv"></div>')
 }
 
+
+
+function mapChartButton() {
+  $('#mapchartdropdowns').empty()
+  $('#mapchartdropdowns').append(`
+  <h4 id="map-nation-title">Conditions in the World</h4>
+  <div class="row">
+  <div class="col-6">
+  <div class="dropdown">
+    <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
+      aria-haspopup="true" aria-expanded="false">
+      Choose malnutrition type
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+      <button onclick="getYears('severe-wasting')" class="dropdown-item" type="button">Severe Wasting</button>
+      <button onclick="getYears('wasting')" class="dropdown-item" type="button">Wasting</button>
+      <button onclick="getYears('stunting')" class="dropdown-item" type="button">Stunting</button>
+      <button onclick="getYears('underweight')" class="dropdown-item" type="button">Underweight</button>
+      <button onclick="getYears('overweight')" class="dropdown-item" type="button">Overweight</button>
+    </div>
+  </div>
+</div>
+<div class="col-6">  
+<div id="years-button"></div>
+</div>
+</div>
+<div id="mapchart-parent">
+  <img class="dummy" src="images/download.png">
+</div>`);
+}
+
 function getYears(option) {
     $('#years-button').empty()
     $('#years-button').append(`
     <div class="dropdown">
-    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       Choose year
     </button>
     <div id="years" class="dropdown-menu" aria-labelledby="dropdownMenu2">

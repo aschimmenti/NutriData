@@ -1,6 +1,4 @@
-$( document ).ready(function() {
-    getNationsBarchart()
-})
+
 
 function cleanBarDiv() {
     $('#map-nation-title').empty()
@@ -14,10 +12,18 @@ function cleanBarDiv() {
 }
 
 function getNationsBarchart() {
+    $('#mapchartdropdowns').empty()
+    $('#mapchartdropdowns').append(`
+    <h4 id="barchart-nation-title">Pathologies correlated to malnutrition</h4>
+    <div id="nations-button-barchart"></div>
+    <div id="barchart-parent">
+      <img class="dummy" src="images/download.png">
+    </div>`)
+
     $('#nations-button-barchart').empty()
     $('#nations-button-barchart').append(`
     <div class="dropdown">
-    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       Choose nation
     </button>
     <div id="nations" class="dropdown-menu" aria-labelledby="dropdownMenu2">

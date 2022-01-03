@@ -945,10 +945,7 @@ html{
 /* end footer section*/
 /*# sourceMappingURL=style.css.map */
 
-.viz section {
-  margin-left: 0%;
-  margin-right: 0%;
-}
+
 
 #barchart-nation-title, #map-nation-title, #line-nation-title {
   font-size: 3rem;
@@ -978,8 +975,7 @@ html{
 
 .viztitle {
  font-size: 4rem; 
- margin: 4vh 0;
-
+ margin: 4vh 4vh;
 }
 
 .metadata-section div p {
@@ -999,4 +995,10 @@ html{
 
 .metadata-content {
   margin: 5vh 0;
+}
+
+ul.no-bullets {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
 }

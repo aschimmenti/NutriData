@@ -1,15 +1,23 @@
-$( document ).ready(function() {
-    getNationsLinechart()
-
-})
-
 
   
 function getNationsLinechart() {
+    $('#mapchartdropdowns').empty()
+    $('#mapchartdropdowns').append(`<div class="row m-0">
+    <div class="col-lg-12 col-md-12 col-sm-12 col m-o p-0">
+      <h4 id="line-nation-title">GDP and Mortality</h4>
+    </div>
+    <div id="nations-button-linechart" class="col-lg-12 col-md-6 col-sm-6 col p-0"></div>
+    <div id="parent1" class="col-lg-6 col-md-6 col-sm-6 col  p-0">
+      <img class="dummy" src="images/download.png">
+    </div>
+    <div id="parent2" class="col-lg-6 col-md-6 col-sm-6 col  p-0">
+      <img class="dummy" src="images/download.png">
+    </div>
+  </div>`)
     $('#nations-button-linechart').empty()
     $('#nations-button-linechart').append(`
     <div class="dropdown">
-    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       Choose nation
     </button>
     <div id="nations-linechart" class="dropdown-menu" aria-labelledby="dropdownMenu2">
