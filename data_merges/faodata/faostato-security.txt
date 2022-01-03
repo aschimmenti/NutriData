@@ -1,0 +1,3 @@
+-- Average dietary energy supply adequacy (percent) (3-year average)  -- Number of moderately or severely food insecure people (million)  -- Number of severely food insecure people (million) 
+https://www.fao.org/faostat/en/?#data/FS
+
