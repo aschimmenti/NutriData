@@ -90,6 +90,7 @@ body {
 }
 
 .custom_nav-container .navbar-nav .nav-item .nav-link {
+  font-size: larger;
   padding: 45px 15px 15px;
   color: #ffffff;
   text-align: center;
@@ -164,7 +165,7 @@ a:focus {
 }
 
 .navbar-brand span {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: bold;
   color: #133e3f;
   margin-top: -10px;
@@ -947,4 +948,55 @@ html{
 .viz section {
   margin-left: 0%;
   margin-right: 0%;
+}
+
+#barchart-nation-title, #map-nation-title, #line-nation-title {
+  font-size: 3rem;
+  color: black;
+  
+}
+
+
+.viz h4 {
+  font-size: 3rem;
+  color: #133e3f;
+}
+
+.viz p {
+  font-size: 1.4rem;
+}
+
+.viz button {
+  font-size: 1.2rem;
+  margin-top: 2vh;
+  margin-bottom: 5vh;
+}
+
+.heading_container p {
+  margin-left: 1wh;
+}
+
+.viztitle {
+ font-size: 4rem; 
+ margin: 4vh 0;
+
+}
+
+.metadata-section div p {
+  font-size: 1.3rem;
+}
+
+.metadata-section div .category{
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.metadata-section div h4 {
+  font-size: 2rem;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+}
+
+.metadata-content {
+  margin: 5vh 0;
 }
