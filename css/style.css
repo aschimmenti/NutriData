@@ -52,8 +52,8 @@ body {
   position: absolute;
   top: 50%;
   left: 2px;
-  width: 1px;
-  height: 65px;
+  width: 3px;
+  height: 75px;
   background-color: #4bc5b8;
   -webkit-transform: translateY(-50%) rotate(20deg);
           transform: translateY(-50%) rotate(20deg);
@@ -1001,4 +1001,38 @@ ul.no-bullets {
   list-style-type: none; /* Remove bullets */
   padding: 0; /* Remove padding */
   margin: 0; /* Remove margins */
+  padding-left: 2vw;
+}
+
+.index-ul {
+    position: fixed;
+    width: fit-content;
+    font-size: 1.1rem;
+    color:rgba(75,197,184, 0.8);
+    margin: auto;
+    font-weight: bolder;
+}
+
+a, a:hover, a:focus, a:active {
+  color: inherit;
+  text-decoration: none;
+  }
+
+a:hover {
+  border-bottom: rgba(75,197,184, 0.8);
+
+}
+
+.index-ul li {
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+
+.heading_container h3{
+  font-size: 3.5rem;
+}
+
+.index-ul li:first-child {
+  border-bottom: 1px solid black;
+  color: black;
 }
