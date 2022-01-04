@@ -2835,28 +2835,6 @@
                 "value": "0.3"
             }
         ],
-        "1985": [
-            {
-                "id": "CV",
-                "name": "Cabo Verde",
-                "value": "0"
-            },
-            {
-                "id": "KI",
-                "name": "Kiribati",
-                "value": "0"
-            },
-            {
-                "id": "MU",
-                "name": "Mauritius",
-                "value": "0"
-            },
-            {
-                "id": "NE",
-                "name": "Niger",
-                "value": "0"
-            }
-        ],
         "2004": [
             {
                 "id": "AF",
@@ -4008,13 +3986,6 @@
                 "id": "ZW",
                 "name": "Zimbabwe",
                 "value": "0.4"
-            }
-        ],
-        "1983": [
-            {
-                "id": "PG",
-                "name": "Papua New Guinea",
-                "value": "1.2"
             }
         ],
         "1989": [
@@ -7494,28 +7465,6 @@
                 "value": "2.9"
             }
         ],
-        "1985": [
-            {
-                "id": "CV",
-                "name": "Cabo Verde",
-                "value": "4.2"
-            },
-            {
-                "id": "KI",
-                "name": "Kiribati",
-                "value": "12.6"
-            },
-            {
-                "id": "MU",
-                "name": "Mauritius",
-                "value": "18.3"
-            },
-            {
-                "id": "NE",
-                "name": "Niger",
-                "value": "25.3"
-            }
-        ],
         "2004": [
             {
                 "id": "AF",
@@ -8667,13 +8616,6 @@
                 "id": "ZW",
                 "name": "Zimbabwe",
                 "value": "1.7"
-            }
-        ],
-        "1983": [
-            {
-                "id": "PG",
-                "name": "Papua New Guinea",
-                "value": "5.5"
             }
         ],
         "1989": [
@@ -12155,11 +12097,6 @@
         ],
         "1985": [
             {
-                "id": "CV",
-                "name": "Cabo Verde",
-                "value": "0"
-            },
-            {
                 "id": "KI",
                 "name": "Kiribati",
                 "value": "15.9"
@@ -12168,11 +12105,6 @@
                 "id": "MU",
                 "name": "Mauritius",
                 "value": "8.8"
-            },
-            {
-                "id": "NE",
-                "name": "Niger",
-                "value": "0"
             }
         ],
         "2004": [
@@ -13326,13 +13258,6 @@
                 "id": "ZW",
                 "name": "Zimbabwe",
                 "value": "5.4"
-            }
-        ],
-        "1983": [
-            {
-                "id": "PG",
-                "name": "Papua New Guinea",
-                "value": "3.1"
             }
         ],
         "1989": [
@@ -17987,13 +17912,6 @@
                 "value": "31.0"
             }
         ],
-        "1983": [
-            {
-                "id": "PG",
-                "name": "Papua New Guinea",
-                "value": "46.0"
-            }
-        ],
         "1989": [
             {
                 "id": "BH",
@@ -22644,13 +22562,6 @@
                 "id": "ZW",
                 "name": "Zimbabwe",
                 "value": "8.0"
-            }
-        ],
-        "1983": [
-            {
-                "id": "PG",
-                "name": "Papua New Guinea",
-                "value": "22.8"
             }
         ],
         "1989": [

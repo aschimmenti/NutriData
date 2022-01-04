@@ -29,7 +29,8 @@
   <style>
     #barchartdiv,
     #chartdiv-gdp,
-    #chartdiv-mrt {
+    #chartdiv-mrt,
+    #chartdiv-calories {
       width: 100%;
       height: 600px;
     }
@@ -116,6 +117,20 @@
     <div class="container-fluid">
       <div class="row">
       <div class="col-lg-3 col-md-3 col-sm-3 col m-0">
+        <div class="card  border-0">
+          <div class="card-body">
+            <h5 class="card-title">Food adequacy supply</h5>
+            <p class="card-text">World map showing the percentage of food adequacy supply; 2018-2020</p>
+            <button type="button" class="btn btn-info" onclick="getColorMap();">Show data</button>
+          </div>
+        </div>
+        <div class="card  border-0">
+          <div class="card-body">
+            <h5 class="card-title">Daily Calories per country</h5>
+            <p class="card-text">Linechart showing daily per capita supply of calories; 1960-2013</p>
+            <button type="button" class="btn btn-info" onclick="getCaloriesNationsLinechart();">Show data</button>
+          </div>
+        </div>
           <div class="card  border-0">
             <div class="card-body">
               <h5 class="card-title">Conditions</h5>
@@ -265,7 +280,10 @@
     crossorigin="anonymous"></script>
   <script src="js/barchart.js"></script>
   <script src="js/linechart.js"></script>
+  <script src="js/linechartcalories.js"></script>
   <script src="js/worldmapchart.js"></script>
+  <script src="js/foodadequacy.js"></script>
+
 
 
 
