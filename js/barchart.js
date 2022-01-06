@@ -8,7 +8,7 @@ function cleanBarDiv() {
     $('#parent2').empty();
     $('#mapchart-parent').empty();
     $('#barchart-parent').empty()
-    $('#barchart-parent').append('<div id="barchartdiv"></div>')
+    $('#barchart-parent').append('<div id="barchartdiv"></div><div class="card"><div class="card-body"><h3 class="card-title">Download datasets used in this visualization</h3><a class="btn btn-primary" href="datasets/pathologies.csv" download>Download .csv</a><a class="btn btn-primary" href="datasets/pathologies-percentage.json" download>Download .json</a></div></div>')
 }
 
 function getNationsBarchart() {
@@ -30,7 +30,7 @@ function getNationsBarchart() {
   
     </div>
   </div>`)
-    $.getJSON('barchart-new-merge.json',function(jsondata){
+    $.getJSON('js/barchart-new-merge.json',function(jsondata){
       var nations = Object.keys(jsondata)
       console.log(nations)
       $.each(nations, function(idx, n) {

@@ -9,9 +9,11 @@ function getNationsLinechart() {
     <div id="nations-button-linechart" class="col-lg-12 col-md-6 col-sm-6 col p-0"></div>
     <div id="parent1" class="col-lg-6 col-md-6 col-sm-6 col  p-0">
       <img class="dummy" src="images/download.png">
+      <div class="card"><div class="card-body"><h3 class="card-title">Download datasets used in this visualization</h3><a class="btn btn-primary" href="datasets/gdp.csv" download>Download .csv</a><a class="btn btn-primary" href="datasets/gdp.json" download>Download .json</a></div></div>
     </div>
     <div id="parent2" class="col-lg-6 col-md-6 col-sm-6 col  p-0">
       <img class="dummy" src="images/download.png">
+      <div class="card"><div class="card-body"><h3 class="card-title">Download datasets used in this visualization</h3><a class="btn btn-primary" href="datasets/mortality.csv" download>Download .csv</a><a class="btn btn-primary" href="datasets/mortality.json" download>Download .json</a></div></div>
     </div>
   </div>`)
     $('#nations-button-linechart').empty()
@@ -24,7 +26,7 @@ function getNationsLinechart() {
   
     </div>
   </div>`)
-    $.getJSON('ngdp.json',function(jsondata){
+    $.getJSON('js/ngdp.json',function(jsondata){
       var nations = Object.keys(jsondata)
       console.log(nations)
       $.each(nations, function(idx, n) {

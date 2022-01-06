@@ -8,6 +8,7 @@ function getCaloriesNationsLinechart() {
     </div>`)
     $('#calories-button-linechart').empty()
     $('#calories-button-linechart').append(`
+    <h4>Daily per capita supply of calories map</h4>
     <div class="dropdown">
     <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       Choose nation
@@ -16,7 +17,7 @@ function getCaloriesNationsLinechart() {
   
     </div>
   </div>`)
-    $.getJSON('daily-per-capita-supply-of-calories.json',function(jsondata){
+    $.getJSON('js/daily-per-capita-supply-of-calories.json',function(jsondata){
       var nations = Object.keys(jsondata)
       console.log(nations)
       $.each(nations, function(idx, n) {
@@ -36,7 +37,7 @@ function linechartCalories(nation) {
     $('#line-nation-title').empty()
     linechartTitle(nation)
     $('#parent1').empty()
-    $('#parent1').append("<div id='chartdiv-calories'></div>")
+    $('#parent1').append('<div id="chartdiv-calories"></div><div class="card"><div class="card-body"><h3 class="card-title">Download datasets used in this visualization</h3><a class="btn btn-primary" href="datasets/dailycalories.csv" download>Download .csv</a><a class="btn btn-primary" href="datasets/dailycalories.json" download>Download .json</a></div></div>')
     am4core.ready(function() {
     
     // Themes begin

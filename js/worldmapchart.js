@@ -1,9 +1,3 @@
-$( document ).ready(function() {
-  $('#mapchartdropdowns').empty()
-  mapChartButton();
-})
-
-
 function cleanDiv() {
     $('#map-nation-title').empty()
     $('#barchart-nation-title').empty()
@@ -12,7 +6,7 @@ function cleanDiv() {
     $('#parent-1').empty();
     $('#parent-1').empty();  
     $('#mapchart-parent').empty();
-    $('#mapchart-parent').append('<div id="mapchartdiv"></div>')
+    $('#mapchart-parent').append('<div id="mapchartdiv"></div><div class="card"><div class="card-body"><h3 class="card-title">Download datasets used in this visualization</h3><a class="btn btn-primary" href="datasets/malnutrition.csv" download>Download .csv</a><a class="btn btn-primary" href="datasets/malnutrition.json" download>Download .json</a></div></div>')
 }
 
 
@@ -57,7 +51,7 @@ function getYears(option) {
   
     </div>
   </div>`)
-    $.getJSON('graph-malnutritions.json',function(jsondata){
+    $.getJSON('js/graph-malnutritions.json',function(jsondata){
       var years = Object.keys(jsondata[option])
       console.log(years, option)
       $.each(years, function(idx, y) {
@@ -74,7 +68,7 @@ function getYears(option) {
   function getGraph(option, year) {
     cleanDiv()
     nationTitleMap(option, year)
-    $.getJSON('graph-malnutritions.json',function(clusters){
+    $.getJSON('js/graph-malnutritions.json',function(clusters){
     var root = am5.Root.new("mapchartdiv");
   
   
