@@ -10,7 +10,7 @@
 @prefix prov: <http://www.w3.org/ns/prov#>.
 
 <data/id>
-    a dcat:Catalog;    
+    a dcat:Catalogue;    
     dct:title "NutriData catalogue";
     dct:description "Catalogue of NutriData datasets.";
     dct:publisher "Amanda Culoma";
@@ -18,12 +18,12 @@
     dct:publisher "Ariele Santello";
     dct:publisher "Andrea Schimmenti";
     dct:modified "2022/01/03"^^xsd:date;
-    dcat:dataset <datasets/data.zip>;
-    dcat:dataset <datasets/data.zip>;
-    dcat:dataset <datasets/data.zip>;
-    dcat:dataset <datasets/data.zip>;
-    dcat:dataset <datasets/data.zip>;
-    dcat:dataset <datasets/data.zip>;
+    dcat:dataset <datasets/data.zip/pathologies.csv>;
+    dcat:dataset <datasets/data.zip/mortality.csv>;
+    dcat:dataset <datasets/data.zip/malnutrition.csv>;
+    dcat:dataset <datasets/data.zip/gdp.csv>;
+    dcat:dataset <datasets/data.zip/foodsupplyadequacy.csv>;
+    dcat:dataset <datasets/data.zip/dailycalories.csv>;
     foaf:homepage <catalogue.html>;
     dct:language <http://publications.europa.eu/resource/authority/language/ENG>;
     dct:issued "2022/01/03"^^xsd:date;
@@ -31,9 +31,9 @@
     dct:license <https://creativecommons.org/licenses/by-sa/4.0/>;
     dct:rights "Under this licence you may copy, distribute, display and perform the work and make derivative works and remixes based on it, even for commercial purposes, only if you give the author or licensor the credits (attribution) in the manner specified by the license, and indicating if changes were made.You may distribute derivative works only under a licence identical to the licence that governs the original work.".
 
-<datases/data.zip>  
+<datasets/data.zip/pathologies.csv>  
     a dcat:Dataset;
-    dct:identifier <datases/data.zip>;
+    dct:identifier <datasets/data.zip/pathologies.csv>;
     dct:title "NutriData - Nutritional Deficiencies dataset";
     dct:description "This dataset contains data from the Institute for Health Metrics and Evaluation, namely, from the GBD section, Global Burden of Disease. The dataset focuses on nutritional disorders and deficiencies of individuals whose age mainly ranges from 5 to 19 years old (adolescents). ";
     dct:modified "2022/01/03"^^xsd:date;
@@ -65,9 +65,9 @@
     dcat:byteSize "318 KB";
     adms:status <http://purl.org/adms/status/Completed>.
 
-<datases/data.zip>  
+<datasets/data.zip/mortality.csv>  
     a dcat:Dataset;
-    dct:identifier <datases/data.zip>;
+    dct:identifier <datasets/data.zip/mortality.csv>;
     dct:title "NutriData - Child Mortality dataset";
     dct:description "This dataset contains data from the World Health Organization. It is an estimation (a statistical model) that predicts the probability that a child aged 5 dies before reaching its 15th birthday.";
     dct:modified "2022/01/03"^^xsd:date;
@@ -95,13 +95,13 @@
     dcat:accessURL <catalogue.html>;
     dct:license <https://creativecommons.org/licenses/by-sa/4.0/>;
     prov:wasDerivedFrom  <https://www.who.int/data/gho/data/indicators/indicator-details/GHO/mortality-rate-for-5-14-year-olds-(probability-of-dying-per-1000-children-aged-5-14-years)>;
-    dcat:downloadURL <datases/data.zip>;
+    dcat:downloadURL <datasets/data.zip>;
     dcat:byteSize "5 KB";
     adms:status <http://purl.org/adms/status/Completed>.
 
-<datases/data.zip>  
+<datasets/data.zip/malnutrition.csv>  
     a dcat:Dataset;
-    dct:identifier <datases/data.zip>;
+    dct:identifier <datasets/data.zip/malnutrition.csv>;
     dct:title "NutriData - Children Malnutrition Estimates";
     dct:description "This dataset contains data from UNICEF, WHO & World Bank’s Joint global database on child malnutrition. It estimates the number of children who show symptoms and effects of under- and malnutrition. The indicators (trends) are four: overweight, stunting, wasting (and severe wasting) and underweight.";
     dct:modified "2022/01/03"^^xsd:date;
@@ -134,9 +134,9 @@
     dcat:byteSize "1309 KB";
     adms:status <http://purl.org/adms/status/Completed>.
 
-<dataset/data.zip>   
+<dataset/data.zip/gdp.csv>   
     a dcat:Dataset;
-    dct:identifier <dataset/data.zip>;
+    dct:identifier <dataset/data.zip/gdp.csv>;
     dct:title "NutriData - GDP-per-capita";
     dct:description "This dataset contains data from World Bank. It shows the list of countries by the gross domestic product per capita.";
     dct:modified "2022/01/03"^^xsd:date;
@@ -168,9 +168,9 @@
     dcat:byteSize "10 KB";
     adms:status <http://purl.org/adms/status/Completed>.
 
-<datasets/data.zip>   
+<datasets/data.zip/foodsupplyadequacy.csv>   
     a dcat:Dataset;
-    dct:identifier <datasets/data.zip>;
+    dct:identifier <datasets/data.zip/foodsupplyadequacy.csv>;
     dct:title "NutriData - Food Insecurity Indicators";
     dct:description "This dataset presents the core set of food security indicators. Indicators are classified along the four dimensions of food security -- availability, access, utilization and stability; data were filtered by the featured indicator "Average dietary energy supply adequacy (percent) (3-year average)";
     dct:modified "2022/01/03"^^xsd:date;
@@ -202,9 +202,9 @@
     dcat:byteSize "13 KB";
     adms:status <http://purl.org/adms/status/Completed>.
 
-<datasets/data.zip> 
+<datasets/data.zip/dailycalories.csv> 
     a dcat:Dataset;
-    dct:identifier <datasets/data.zip> ;
+    dct:identifier <datasets/data.zip/dailycalories.csv> ;
     dct:title "NutriData - Daily per capita Supply of Kilocalories";
     dct:description "This dataset (sources: FAO and Our World in Data) contains the supply of kilocalories per person per day. Daily caloric supply is defined as the average per capita caloric availability. It indicates the caloric availability delivered to households.";
     dct:issued "2022/01/03"^^xsd:date;
