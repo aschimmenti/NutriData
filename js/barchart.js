@@ -17,7 +17,7 @@ function getNationsBarchart() {
     <h4 id="barchart-nation-title">Pathologies correlated to malnutrition</h4>
     <div id="nations-button-barchart"></div>
     <div id="barchart-parent">
-      <img class="dummy" src="images/download.png">
+      <img class="dummy" src="images/pathologies.jpg">
     </div>`)
 
     $('#nations-button-barchart').empty()

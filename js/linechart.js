@@ -4,15 +4,15 @@ function getNationsLinechart() {
     $('#mapchartdropdowns').empty()
     $('#mapchartdropdowns').append(`<div class="row m-0">
     <div class="col-lg-12 col-md-12 col-sm-12 col m-o p-0">
-      <h4 id="line-nation-title">GDP and Mortality</h4>
+      <h4 id="line-nation-title">GDP and Child Mortality rates</h4>
     </div>
     <div id="nations-button-linechart" class="col-lg-12 col-md-6 col-sm-6 col p-0"></div>
     <div id="parent1" class="col-lg-6 col-md-6 col-sm-6 col  p-0">
-      <img class="dummy" src="images/download.png">
+      <img class="dummy" src="images/gdp.png">
       <div class="card"><div class="card-body"><h3 class="card-title">Download datasets used in this visualization</h3><a class="btn btn-primary" href="datasets/gdp.csv" download>Download .csv</a><a class="btn btn-primary" href="datasets/gdp.json" download>Download .json</a></div></div>
     </div>
     <div id="parent2" class="col-lg-6 col-md-6 col-sm-6 col  p-0">
-      <img class="dummy" src="images/download.png">
+      <img class="dummy" src="images/mortality.jpg">
       <div class="card"><div class="card-body"><h3 class="card-title">Download datasets used in this visualization</h3><a class="btn btn-primary" href="datasets/mortality.csv" download>Download .csv</a><a class="btn btn-primary" href="datasets/mortality.json" download>Download .json</a></div></div>
     </div>
   </div>`)

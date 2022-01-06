@@ -36,7 +36,7 @@ function mapChartButton() {
 </div>
 </div>
 <div id="mapchart-parent">
-  <img class="dummy" src="images/download.png">
+  <img class="dummy" src="images/malnutrition.png">
 </div>`);
 }
 
