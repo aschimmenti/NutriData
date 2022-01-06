@@ -86,6 +86,7 @@
               <li>Datasets: </li>
               <li><a href="#nutridef">Nutritional Deficiencies and Related Diseases</a></li>
               <li><a href="#nutrimrt">Child Mortality Dataset</a></li>
+              <li><a href="#lifexp">Life Expectancy</a></li>
               <li><a href="#nutriest">Malnutrition Estimates Dataset</a></li>
               <li><a href="#nutrigdp">GDP per capita Dataset</a></li>
               <li><a href="#nutrind">Food Insecurity Indicators</a></li>
@@ -106,7 +107,7 @@
               <div class="card-deck">
                 <div id="nutridef" class="metadata-content card">
                   <div class="card-body">
-                    <h4 class="card-text">Nutritional Deficiencies and Related Diseases/Disorders Dataset</h4>
+                    <h4 class="card-title">Nutritional Deficiencies and Related Diseases/Disorders Dataset</h4>
                     <p class="card-text"><span class="category">Identifier</span>: (NutriData uri)</p>
                     <p class="card-text"><span class="category">Title</span>: NutriData Nutritional Deficiencies and
                       Related Diseases and Disorders</p>
@@ -142,12 +143,12 @@
                   </div>
                 </div>
               </div>
-              <div class="col-sm-9 col-md-9 col-lg-9 col">
+              <div class="col">
                 <div id="nutrimrt" class="metadata-content card">
                   <div class="card-body">
                     <h4 class="card-title">Child mortality rate 5-14 years old</h4>
-                    <p class="card-text"><span class="category">Licence</span>: (Nutridata uri)</p>
-                    <p class="card-text"><span class="category">Licence</span>: NutriData Child Mortality</p>
+                    <p class="card-text"><span class="category">Identifier</span>: (Nutridata uri)</p>
+                    <p class="card-text"><span class="category">Title</span>: NutriData Child Mortality</p>
                     <p class="card-text"><span class="category">Description</span>: This dataset contains data from the
                       World Health Organization and from the UN IGME agency. It contains estimates, calculated by dividing the number of deaths by the population at risk during a certain time frame, on children between 5-14 years old.</p>
                     <p class="card-text"><span class="category">Source</span>: child-mortality.csv<a
@@ -180,12 +181,12 @@
                   </div>
                 </div>
               </div>
-              <div class="col-sm-9 col-md-9 col-lg-9 col">
-                <div id="nutrimrt" class="metadata-content card">
+              <div class="col">
+                <div id="lifexp" class="metadata-content card">
                   <div class="card-body">
                     <h4 class="card-title">Life expectancy</h4>
-                    <p class="card-text"><span class="category">Licence</span>: (Nutridata uri)</p>
-                    <p class="card-text"><span class="category">Licence</span>: NutriData Life Exp</p>
+                    <p class="card-text"><span class="category">Identifier</span>: (Nutridata uri)</p>
+                    <p class="card-text"><span class="category">Title</span>: NutriData Life Expectancy</p>
                     <p class="card-text"><span class="category">Description</span>: This dataset contains data from Our World in Data and WHO on the life expectancy of people from birth, in available countries. It also contains </p>
                     <p class="card-text"><span class="category">Source</span>: life-expectancy.csv<a
                         href="https://ourworldindata.org/life-expectancy"
@@ -217,11 +218,11 @@
                   </div>
                 </div>
               </div>
-              <div class="col-sm-9 col-md-9 col-lg-9 col">
+              <div class="col">
                 <div id="nutriest" class="metadata-content card">
                   <div class="card-body">
                     <h4 class="card-title">Malnutrition Estimates Dataset</h4>
-                    <p class="card-text"><span class="category">Licence</span>: (Nutridata uri)</p>
+                    <p class="card-text"><span class="category">Identifier</span>: (Nutridata uri)</p>
                     <p class="card-text"><span class="category">Licence</span>: NutriData Children Malnutrition
                       Estimates</p>
                     <p class="card-text"><span class="category">Description</span>: This dataset contains data from
@@ -256,7 +257,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-sm-9 col-md-9 col-lg-9 col">
+              <div class="col">
                 <div id="nutrigdp" class="metadata-content card">
                   <div class="card-body">
                     <h4 class="card-title">GDP per capita Dataset</h4>
@@ -290,7 +291,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-sm-9 col-md-9 col-lg-9 col">
+              <div class="col">
                 <div id="nutrind" class="metadata-content card">
                   <div class="card-body">
                     <h4 class="card-title">Food Insecurity Indicators</h4>
@@ -327,7 +328,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-sm-9 col-md-9 col-lg-9 col">
+              <div class="col">
                 <div id="nutrical" class="metadata-content card">
                   <div class="card-body">
                     <h4 class="card-title">Daily per capita Supply of Kilocalories</h4>
@@ -367,16 +368,16 @@
                   </div>
                 </div>
               </div>
-              <div class="col-sm-9 col-md-9 col-lg-9 col">
+              <div class="col">
                 <div id="checklist" class="metadata-content card">
                   <div class="card-body text-center">
                     <h4 class="card-title">Checklist and RDF assertion of the metadata</h4>
                     <p class="card-text">Download the checklist of the Open Nutrition dataset in .pdf format along with the RDF assertion of the metadata.</p>
                     <div class="btn-group-vertical m-auto">
-                    <a class="btn btn-primary" href="datasets/NutriData-checklist.pdf" download>Download Check List</a>
-                    <a class="btn btn-primary" href="datasets/rdf_nutridata.ttl" download>Download RDF assertion of the Nutridata metadata (.ttl)</a>
-                    <a class="btn btn-primary" href="datasets/nutridata.zip" download>Download full dataset and Catalogue</a>
-                    <a class="btn btn-primary" href="datasets/nutridata-rdf.zip" download>Download full dataset, Catalogue and RDF</a>
+                    <a class="btn btn-primary m-1" href="datasets/NutriData-checklist.pdf" download>Download Check List</a>
+                    <a class="btn btn-primary m-1" href="datasets/rdf_nutridata.ttl" download>Download RDF assertion of the Nutridata metadata (.ttl)</a>
+                    <a class="btn btn-primary m-1" href="datasets/nutridata.zip" download>Download full dataset and Catalogue</a>
+                    <a class="btn btn-primary m-1" href="datasets/nutridata-rdf.zip" download>Download full dataset, Catalogue and RDF</a>
                     </div>
                   </div>
                 </div>
