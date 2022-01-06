@@ -13,7 +13,7 @@ function getColorMap() {
     $('#calories-button-linechart').empty()
     $('#calories-button-linechart').append(`
     <h4>Average dietary energy supply adequacy (percent) per day</h4>`)
-    $('#mapchartdropdowns').append('<div id="mapchartdiv"></div><div class="card"><div class="card-body"><h3 class="card-title">Download datasets used in this visualization</h3><a class="btn btn-primary" href="datasets/foodsupplyadequacy.csv" download>Download .csv</a><a class="btn btn-primary" href="datasets/foodsupplyadequacy.json" download>Download .json</a></div></div>')
+    $('#mapchartdropdowns').append('<div id="mapchartdiv"></div><div class="card"><div class="card-body"><h3 class="card-title">Download datasets used in this visualization</h3><a class="btn btn-primary" href="datasets/foodsupplyadequacy.zip" download>Download .zip file</a></div></div>')
     colorMapGraph()
 }
 

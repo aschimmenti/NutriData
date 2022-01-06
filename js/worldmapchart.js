@@ -6,7 +6,7 @@ function cleanDiv() {
     $('#parent-1').empty();
     $('#parent-1').empty();  
     $('#mapchart-parent').empty();
-    $('#mapchart-parent').append('<div id="mapchartdiv"></div><div class="card"><div class="card-body"><h3 class="card-title">Download datasets used in this visualization</h3><a class="btn btn-primary" href="datasets/malnutrition.csv" download>Download .csv</a><a class="btn btn-primary" href="datasets/malnutrition.json" download>Download .json</a></div></div>')
+    $('#mapchart-parent').append('<div id="mapchartdiv"></div><div class="card"><div class="card-body"><h3 class="card-title">Download datasets used in this visualization</h3><a class="btn btn-primary" href="datasets/malnutrition.zip" download>Download .zip file (.csv, .json)</a></div></div>')
 }
 
 
@@ -36,8 +36,8 @@ function mapChartButton() {
 </div>
 </div>
 <div id="mapchart-parent">
-  <img class="dummy" src="images/malnutrition.png">
 </div>`);
+getGraph('severe-wasting', "2010")
 }
 
 function getYears(option) {
@@ -180,5 +180,5 @@ function capitalizeFirstLetter(string) {
 
 function nationTitleMap(option, year) {
 $('#map-nation-title').empty()
-$('#map-nation-title').html(`${capitalizeFirstLetter(option)} in the world for the year ${year}`);
+$('#map-nation-title').html(`${capitalizeFirstLetter(option.replace('-', ' '))} in the world for the year ${year}`);
 }

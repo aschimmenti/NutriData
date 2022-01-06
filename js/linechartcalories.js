@@ -4,11 +4,11 @@ function getCaloriesNationsLinechart() {
     $('#mapchartdropdowns').empty()
     $('#mapchartdropdowns').append(`
     <div id="calories-button-linechart" class="col-lg-12 col-md-6 col-sm-6 col p-0"></div>
-    <div id="parent1" class="col-lg-6 col-md-6 col-sm-6 col  p-0">
+    <div id="parent1" >
     </div>`)
     $('#calories-button-linechart').empty()
     $('#calories-button-linechart').append(`
-    <h4>Daily per capita supply of calories map</h4>
+    <h4 id="line-nation-title">Daily per capita supply of calories map</h4>
     <div class="dropdown">
     <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       Choose nation
@@ -26,6 +26,7 @@ function getCaloriesNationsLinechart() {
         `)
       })
     })
+    linechartCalories('Italy')
   }
 
 
@@ -37,7 +38,7 @@ function linechartCalories(nation) {
     $('#line-nation-title').empty()
     linechartTitle(nation)
     $('#parent1').empty()
-    $('#parent1').append('<div id="chartdiv-calories"></div><div class="card"><div class="card-body"><h3 class="card-title">Download datasets used in this visualization</h3><a class="btn btn-primary" href="datasets/dailycalories.csv" download>Download .csv</a><a class="btn btn-primary" href="datasets/dailycalories.json" download>Download .json</a></div></div>')
+    $('#parent1').append('<div id="chartdiv-calories"></div><div class="card"><div class="card-body"><h3 class="card-title">Download datasets used in this visualization</h3><a class="btn btn-primary" href="datasets/dailycalories.zip" download>Download .zip file</a></div></div>')
     am4core.ready(function() {
     
     // Themes begin
@@ -38237,7 +38238,7 @@ function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
     }
     
-    function linechartTitle(input) {
+function linechartTitle(input) {
     $('#line-nation-title').empty()
     $('#line-nation-title').html(`${capitalizeFirstLetter(input)}'s daily supply of calories per capita`);
     }

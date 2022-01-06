@@ -1,0 +1,387 @@
+<!-- Styles -->
+<style>
+  #chartdiv {
+    width: 100%;
+    height: 500px;
+  }
+  </style>
+  
+  <!-- Resources -->
+  <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+  
+  <!-- Chart code -->
+  <script>
+  var gdp = [ 
+        {
+            "date": "1990",
+            "value": "31598341233.559"
+        },
+        {
+            "date": "1991",
+            "value": "30957483949.5798"
+        },
+        {
+            "date": "1992",
+            "value": "31708874594.1645"
+        },
+        {
+            "date": "1993",
+            "value": "33166519417.9894"
+        },
+        {
+            "date": "1994",
+            "value": "33768660882.793"
+        },
+        {
+            "date": "1995",
+            "value": "37939748768.6567"
+        },
+        {
+            "date": "1996",
+            "value": "46438484107.5795"
+        },
+        {
+            "date": "1997",
+            "value": "48244309133.4895"
+        },
+        {
+            "date": "1998",
+            "value": "49984559471.3656"
+        },
+        {
+            "date": "1999",
+            "value": "51270569883.5275"
+        },
+        {
+            "date": "2000",
+            "value": "53369787318.6245"
+        },
+        {
+            "date": "2001",
+            "value": "53991289844.3291"
+        },
+        {
+            "date": "2002",
+            "value": "54724081490.5102"
+        },
+        {
+            "date": "2003",
+            "value": "60158929188.2556"
+        },
+        {
+            "date": "2004",
+            "value": "65108544250.0425"
+        },
+        {
+            "date": "2005",
+            "value": "69442943089.4309"
+        },
+        {
+            "date": "2006",
+            "value": "71819083683.7403"
+        },
+        {
+            "date": "2007",
+            "value": "79611888213.148"
+        },
+        {
+            "date": "2008",
+            "value": "91631278239.3237"
+        },
+        {
+            "date": "2009",
+            "value": "102477791472.39"
+        },
+        {
+            "date": "2010",
+            "value": "115279077465.226"
+        },
+        {
+            "date": "2011",
+            "value": "128637938711.386"
+        },
+        {
+            "date": "2012",
+            "value": "133355749482.478"
+        },
+        {
+            "date": "2013",
+            "value": "149990451022.29"
+        },
+        {
+            "date": "2014",
+            "value": "172885454931.453"
+        },
+        {
+            "date": "2015",
+            "value": "195078678697.23"
+        },
+        {
+            "date": "2016",
+            "value": "221415188000.475"
+        },
+        {
+            "date": "2017",
+            "value": "249710922462.309"
+        },
+        {
+            "date": "2018",
+            "value": "274038973437.275"
+        },
+        {
+            "date": "2019",
+            "value": "302571320445.75"
+        },
+        {
+            "date": "2020",
+            "value": "323056957972.312"
+        }
+    ]
+
+  var mortality = [
+        {
+            "date": "1990",
+            "value": 24.3935
+        },
+        {
+            "date": "1991",
+            "value": 30.3127
+        },
+        {
+            "date": "1992",
+            "value": 22.2618
+        },
+        {
+            "date": "1993",
+            "value": 21.5272
+        },
+        {
+            "date": "1994",
+            "value": 21.008
+        },
+        {
+            "date": "1995",
+            "value": 20.5025
+        },
+        {
+            "date": "1996",
+            "value": 19.5268
+        },
+        {
+            "date": "1997",
+            "value": 17.6474
+        },
+        {
+            "date": "1998",
+            "value": 15.2235
+        },
+        {
+            "date": "1999",
+            "value": 12.9108
+        },
+        {
+            "date": "2000",
+            "value": 11.0535
+        },
+        {
+            "date": "2001",
+            "value": 9.9031
+        },
+        {
+            "date": "2002",
+            "value": 9.5731
+        },
+        {
+            "date": "2003",
+            "value": 9.8847
+        },
+        {
+            "date": "2004",
+            "value": 10.4847
+        },
+        {
+            "date": "2005",
+            "value": 11.0664
+        },
+        {
+            "date": "2006",
+            "value": 11.4016
+        },
+        {
+            "date": "2007",
+            "value": 11.3081
+        },
+        {
+            "date": "2008",
+            "value": 10.781
+        },
+        {
+            "date": "2009",
+            "value": 9.9876
+        },
+        {
+            "date": "2010",
+            "value": 9.0926
+        },
+        {
+            "date": "2011",
+            "value": 8.2027
+        },
+        {
+            "date": "2012",
+            "value": 7.4276
+        },
+        {
+            "date": "2013",
+            "value": 6.8146
+        },
+        {
+            "date": "2014",
+            "value": 6.3755
+        },
+        {
+            "date": "2015",
+            "value": 6.1399
+        },
+        {
+            "date": "2016",
+            "value": 6.0953
+        },
+        {
+            "date": "2017",
+            "value": 6.2774
+        },
+        {
+            "date": "2018",
+            "value": 6.5757
+        },
+        {
+            "date": "2019",
+            "value": 6.8756
+        }
+    ]
+
+
+  am5.ready(function() {
+  
+  // Create root element
+  // https://www.amcharts.com/docs/v5/getting-started/#Root_element
+  var root = am5.Root.new("chartdiv");
+  
+  // Set themes
+  // https://www.amcharts.com/docs/v5/concepts/themes/
+  root.setThemes([
+    am5themes_Animated.new(root)
+  ]);
+  
+  // Create chart
+  // https://www.amcharts.com/docs/v5/charts/xy-chart/
+  var chart = root.container.children.push(
+    am5xy.XYChart.new(root, {
+      focusable: true,
+      panX: true,
+      panY: true,
+      wheelX: "panX",
+      wheelY: "zoomX"
+    })
+  );
+  
+  var easing = am5.ease.linear;
+  chart.get("colors").set("step", 3);
+  
+  // Create axes
+  // https://www.amcharts.com/docs/v5/charts/xy-chart/axes/
+  var xAxis = chart.xAxes.push(
+    am5xy.DateAxis.new(root, {
+      maxDeviation: 0.1,
+      groupData: false,
+      baseInterval: {
+        timeUnit: "day",
+        count: 1
+      },
+      renderer: am5xy.AxisRendererX.new(root, {}),
+      tooltip: am5.Tooltip.new(root, {})
+    })
+  );
+  
+  function createAxisAndSeries(datafromjson, opposite, opposite2) {
+    var yRenderer = am5xy.AxisRendererY.new(root, {
+      opposite: opposite
+    });
+    var yAxis = chart.yAxes.push(
+      am5xy.ValueAxis.new(root, {
+        maxDeviation: 10,
+        logarithmic: opposite2,
+        renderer: yRenderer
+      })
+    );
+  
+    if (chart.yAxes.indexOf(yAxis) > 0) {
+      yAxis.set("syncWithAxis", chart.yAxes.getIndex(0));
+    }
+  
+    // Add series
+    // https://www.amcharts.com/docs/v5/charts/xy-chart/series/
+    var series = chart.series.push(
+      am5xy.LineSeries.new(root, {
+        xAxis: xAxis,
+        yAxis: yAxis,
+        valueYField: "value",
+        valueXField: "date",
+        tooltip: am5.Tooltip.new(root, {
+          pointerOrientation: "horizontal",
+          labelText: "{valueY}"
+        })
+      })
+    );
+  
+    //series.fills.template.setAll({ fillOpacity: 0.2, visible: true });
+    series.strokes.template.setAll({ strokeWidth: 1 });
+  
+    yRenderer.grid.template.set("strokeOpacity", 0.05);
+    yRenderer.labels.template.set("fill", series.get("fill"));
+    yRenderer.setAll({
+      stroke: series.get("fill"),
+      strokeOpacity: 1,
+      opacity: 1
+    });
+  
+    // Set up data processor to parse string dates
+    // https://www.amcharts.com/docs/v5/concepts/data/#Pre_processing_data
+    series.data.processor = am5.DataProcessor.new(root, {
+      dateFormat: "yyyy",
+      dateFields: ["date"]
+    });
+  
+    series.data.setAll(datafromjson); //here you put your data.json
+  }
+  
+  // Add cursor
+  // https://www.amcharts.com/docs/v5/charts/xy-chart/cursor/
+  var cursor = chart.set("cursor", am5xy.XYCursor.new(root, {
+    xAxis: xAxis,
+    behavior: "none"
+  }));
+  cursor.lineY.set("visible", false);
+  
+  // add scrollbar
+  chart.set("scrollbarX", am5.Scrollbar.new(root, {
+    orientation: "horizontal"
+  }));
+
+  createAxisAndSeries(mortality, false, true);
+  createAxisAndSeries(gdp, false, false);
+  
+  // Make stuff animate on load
+  // https://www.amcharts.com/docs/v5/concepts/animations/
+  chart.appear(1000,100);
+  
+  // Generates random data, quite different range
+  
+  }); // end am5.ready()
+  </script>
+  
+  <!-- HTML -->
+  <div id="chartdiv"></div>

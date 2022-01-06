@@ -115,17 +115,16 @@
                       Disease. The dataset focuses on nutritional disorders and deficiencies of individuals whose age
                       mainly ranges from 5 to 19 years old (adolescents).</p>
                     <p class="card-text"><span class="category">Modified</span>: 20/11/2021</p>
-                    <p class="card-text"><span class="category">Source</span>:
-                      IHME-GBD_2019_DATA-27a144e6-1_ISO-ready.csv, <a href="http://ghdx.healthdata.org/gbd-results-tool"
-                        target="_blank">http://ghdx.healthdata.org/gbd-results-tool</a></p>
+                    <p class="card-text"><span class="category">Source</span>: IHME-GBD_2019_DATA-27a144e6-1.csv, 
+                      IHME GBD API<a href="http://ghdx.healthdata.org/gbd-results-tool"
+                        target="_blank"> (link to the source)</a>. The dataset was created as a merge from various dataset (asthma, iron deficiency, vitamin A deficiency, diabetes mellitus II, protein energy malnutrition, liver-related diseases)  downloaded from the IHME-GBD API (for reproduction: all locations; all years; context: cause; years: 0-19; metric: percentage; measure: incidence;)</p>
                     <p class="card-text"><span class="category">Theme</span>: Malnutrition, diseases, disorders</p>
-                    <p class="card-text"><span class="category">Format:</span>CSV (comma-separated values), JSON</p>
+                    <p class="card-text"><span class="category">Format:</span> CSV, JSON</p>
                     <p class="card-text"><span class="category">Periodicity</span>: Annual</p>
                     <p class="card-text"><span class="category">Rights Holder</span>: IHME – Institute for Health
                       Metrics and Evaluation, Global Burden of Disease</p>
-                    <p class="card-text"><span class="category">Subject</span>: Number of people from 5 to 19 years old
-                      who suffer nutritional deficiencies and related diseases (e.g. Asthma, Cardiovascular diseases,
-                      Diabetes mellitus etc.)</p>
+                    <p class="card-text"><span class="category">Subject</span>: Percentage of incidence for nutritional deficiencies and related diseases (e.g. Asthma, Cardiovascular diseases,
+                      Diabetes mellitus etc.) in people from 5 to 19 years old</p>
                     <p class="card-text"><span class="category">Publisher</span>: Amanda Culoma, Giulia Massimino,
                       Ariele Santello, Andrea Schimmenti</p>
                     <p class="card-text"><span class="category">Creator</span>: Amanda Culoma, Giulia Massimino, Ariele
@@ -138,27 +137,30 @@
                     <p class="card-text"><span class="category">Licence</span>: (same as URL)</p>
                     <p class="card-text"><span class="category">Licence</span>: Completed</p>
                     <a class="btn btn-primary" href="datasets/pathologies.csv" download>Download .csv</a>
-                    <a class="btn btn-primary" href="datasets/pathologies-percentage.json" download>Download .json</a>
+                    <a class="btn btn-primary" href="datasets/pathologies.json" download>Download .json</a>
+                    <a class="btn btn-primary" href="datasets/pathologies.zip" download>Download .zip</a>
                   </div>
                 </div>
               </div>
               <div class="col-sm-9 col-md-9 col-lg-9 col">
                 <div id="nutrimrt" class="metadata-content card">
                   <div class="card-body">
-                    <h4 class="card-title">Child Mortality Dataset</h4>
+                    <h4 class="card-title">Child mortality rate 5-14 years old</h4>
                     <p class="card-text"><span class="category">Licence</span>: (Nutridata uri)</p>
                     <p class="card-text"><span class="category">Licence</span>: NutriData Child Mortality</p>
                     <p class="card-text"><span class="category">Description</span>: This dataset contains data from the
-                      World Health Organization. It is an estimation (a statistical model) that predicts the probability
-                      that a child aged 5 dies before reaching its 15th birthday.</p>
-                    <p class="card-text"><span class="category">Source</span>: child-mortality.csv, <a
+                      World Health Organization and from the UN IGME agency. It contains estimates, calculated by dividing the number of deaths by the population at risk during a certain time frame, on children between 5-14 years old.</p>
+                    <p class="card-text"><span class="category">Source</span>: child-mortality.csv<a
                         href="https://www.who.int/data/gho/data/indicators/indicator-details/GHO/mortality-rate-for-5-14-year-olds-(probability-of-dying-per-1000-children-aged-5-14-years)"
-                        target="_blank">https://www.who.int/data/gho/data/indicators/indicator-details/GHO/mortality-rate-for-5-14-year-olds-(probability-of-dying-per-1000-children-aged-5-14-years)</a>
+                        target="_blank"> (link to the source)</a>, 
+                        UNICEF-CME_DF_2021_WQ-1.0-download.csv, <a
+                        href="https://childmortality.org/data"
+                        target="_blank"> (link to the source)</a>
                     </p>
                     <p class="card-text"><span class="category">Theme</span>: Child mortality and burden of disease</p>
                     <p class="card-text"><span class="category">Format</span>: CSV, JSON</p>
                     <p class="card-text"><span class="category">Periodicity</span>: Annual</p>
-                    <p class="card-text"><span class="category">Rights Holder</span>: WHO</p>
+                    <p class="card-text"><span class="category">Rights Holder</span>: WHO, UN IGME</p>
                     <p class="card-text"><span class="category">Subject</span>: The probability that a child aged 5 dies
                       before reaching its 15th birthday, a rate of deaths per 1000 children.</p>
                     <p class="card-text"><span class="category">Publisher</span>: Amanda Culoma, Giulia Massimino,
@@ -174,6 +176,44 @@
                     <p class="card-text"><span class="category">Licence</span>: Completed</p>
                     <a class="btn btn-primary" href="datasets/mortality.csv" download>Download .csv</a>
                     <a class="btn btn-primary" href="datasets/mortality.json" download>Download .json</a>
+                    <a class="btn btn-primary" href="datasets/gdp_life_mortality.zip" download>Download .zip</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-9 col-md-9 col-lg-9 col">
+                <div id="nutrimrt" class="metadata-content card">
+                  <div class="card-body">
+                    <h4 class="card-title">Life expectancy</h4>
+                    <p class="card-text"><span class="category">Licence</span>: (Nutridata uri)</p>
+                    <p class="card-text"><span class="category">Licence</span>: NutriData Life Exp</p>
+                    <p class="card-text"><span class="category">Description</span>: This dataset contains data from Our World in Data and WHO on the life expectancy of people from birth, in available countries. It also contains </p>
+                    <p class="card-text"><span class="category">Source</span>: life-expectancy.csv<a
+                        href="https://ourworldindata.org/life-expectancy"
+                        target="_blank"> (link to the source)</a>, 
+                        data.csv, <a
+                        href="https://www.who.int/data/gho/data/indicators/indicator-details/GHO/life-expectancy-at-birth-(years)"
+                        target="_blank"> (link to the source)</a>
+                    </p>
+                    <p class="card-text"><span class="category">Theme</span>: Life expectancy</p>
+                    <p class="card-text"><span class="category">Format</span>: CSV, JSON</p>
+                    <p class="card-text"><span class="category">Periodicity</span>: Annual</p>
+                    <p class="card-text"><span class="category">Rights Holder</span>: James C. Riley, Our World in Data, WHO</p>
+                    <p class="card-text"><span class="category">Subject</span>: The probability that a child aged 5 dies
+                      before reaching its 15th birthday, a rate of deaths per 1000 children.</p>
+                    <p class="card-text"><span class="category">Publisher</span>: Amanda Culoma, Giulia Massimino,
+                      Ariele Santello, Andrea Schimmenti</p>
+                    <p class="card-text"><span class="category">Creator</span>: Amanda Culoma, Giulia Massimino, Ariele
+                      Santello, Andrea Schimmenti</p>
+                    <p class="card-text"><span class="category">Language</span>: English</p>
+                    <p class="card-text"><span class="category">Temporal Coverage</span>: 1950-2018</p>
+                    <p class="card-text"><span class="category">Spatial Coverage</span>: World</p>
+                    <p class="card-text"><span class="category">URL</span>: (same as identifier)</p>
+                    <p class="card-text"><span class="category">Licence</span>: CC-BY-SA 4.0</p>
+                    <p class="card-text"><span class="category">Licence</span>: (same as URL)</p>
+                    <p class="card-text"><span class="category">Licence</span>: Completed</p>
+                    <a class="btn btn-primary" href="datasets/life-expectancy.csv" download>Download .csv</a>
+                    <a class="btn btn-primary" href="datasets/life-expectancy.json" download>Download .json</a>
+                    <a class="btn btn-primary" href="datasets/gdp_life_mortality.zip" download>Download .zip</a>
                   </div>
                 </div>
               </div>
@@ -212,6 +252,7 @@
                     <p class="card-text"><span class="category">Licence</span>: Completed</p>
                     <a class="btn btn-primary" href="datasets/malnutrition.csv" download>Download .csv</a>
                     <a class="btn btn-primary" href="datasets/malnutrition.json" download>Download .json</a>
+                    <a class="btn btn-primary" href="datasets/malnutrition.zip" download>Download .zip</a>
                   </div>
                 </div>
               </div>
@@ -224,9 +265,9 @@
                     <p class="card-text"><span class="category">Description</span>: This dataset contains data from
                       World Bank. It shows the list of countries by the gross domestic product per capita.</p>
                     <p class="card-text"><span class="category">Source</span>:
-                      API_NY.GDP.MKTP.CD_DS2_en_csv_v2_3469429.csv,<a
+                      API_NY.GDP.MKTP.CD_DS2_en_csv_v2_3469429.csv<a
                         href="https://data.worldbank.org/indicator/NY.GDP.MKTP.CD"
-                        target="_blank">https://data.worldbank.org/indicator/NY.GDP.MKTP.CD</a> </p>
+                        target="_blank"> (link to the source)</a> </p>
                     <p class="card-text"><span class="category">Theme</span>: GDP per capita</p>
                     <p class="card-text"><span class="category">Format</span>: CSV, JSON</p>
                     <p class="card-text"><span class="category">Periodicity</span>: Annual</p>
@@ -245,6 +286,7 @@
                     <p class="card-text"><span class="category">Licence</span>: Completed</p>
                     <a class="btn btn-primary" href="datasets/gdp.csv" download>Download .csv</a>
                     <a class="btn btn-primary" href="datasets/gdp.json" download>Download .json</a>
+                    <a class="btn btn-primary" href="datasets/gdp_life_mortality.zip" download>Download .zip</a>
                   </div>
                 </div>
               </div>
@@ -258,9 +300,9 @@
                       of food security indicators. Indicators are classified along the four dimensions of food security
                       -- availability, access, utilization and stability; data were filtered by the featured indicator
                       "Average dietary energy supply adequacy (percent) (3-year average)</p>
-                    <p class="card-text"><span class="category">Source</span>: foodsupplyadequacy.csv,<a
+                    <p class="card-text"><span class="category">Source</span>: foodsupplyadequacy.csv <a
                         href="https://www.fao.org/faostat/en/?#data/FS" target="_blank">
-                        https://www.fao.org/faostat/en/?#data/FS </a> </p>
+                         (link to the source) </a> </p>
                     <p class="card-text"><span class="category">Theme</span>: Food Insecurity Indicators</p>
                     <p class="card-text"><span class="category">Format</span>: CSV, JSON</p>
                     <p class="card-text"><span class="category">Periodicity</span>: Annual</p>
@@ -281,6 +323,7 @@
                     <p class="card-text"><span class="category">Licence</span>: Completed</p>
                     <a class="btn btn-primary" href="datasets/foodsupplyadequacy.csv" download>Download .csv</a>
                     <a class="btn btn-primary" href="datasets/foodsupplyadequacy.json" download>Download .json</a>
+                    <a class="btn btn-primary" href="datasets/foodsupplyadequacy.zip" download>Download .zip</a>
                   </div>
                 </div>
               </div>
@@ -297,7 +340,7 @@
                       delivered to households.</p>
                     <p class="card-text"><span class="category">Source</span>: daily-per-capita-supply-of-calories.csv,
                       <a href="https://ourworldindata.org/grapher/daily-per-capita-supply-of-calories" target="_blank">
-                        https://ourworldindata.org/grapher/daily-per-capita-supply-of-calories </a>
+                         (link to the source)</a>
                     </p>
                     <p class="card-text"><span class="category">Theme</span>: Daily per capita supply of kilocalories
                       per person</p>
@@ -320,15 +363,21 @@
                     <p class="card-text"><span class="category">Licence</span>: Completed</p>
                     <a class="btn btn-primary" href="datasets/dailycalories.csv" download>Download .csv</a>
                     <a class="btn btn-primary" href="datasets/dailycalories.json" download>Download .json</a>
+                    <a class="btn btn-primary" href="datasets/dailycalories.zip" download>Download .zip</a>
                   </div>
                 </div>
               </div>
               <div class="col-sm-9 col-md-9 col-lg-9 col">
                 <div id="checklist" class="metadata-content card">
-                  <div class="card-body">
-                    <h4 class="card-title">Checklist</h4>
-                    <p class="card-text">Download the checklist of each dataset in .pdf format.</p>
-                    <a class="btn btn-primary" href="NutriData-checklist.pdf" download>Download Check List</a>
+                  <div class="card-body text-center">
+                    <h4 class="card-title">Checklist and RDF assertion of the metadata</h4>
+                    <p class="card-text">Download the checklist of the Open Nutrition dataset in .pdf format along with the RDF assertion of the metadata.</p>
+                    <div class="btn-group-vertical m-auto">
+                    <a class="btn btn-primary" href="datasets/NutriData-checklist.pdf" download>Download Check List</a>
+                    <a class="btn btn-primary" href="datasets/rdf_nutridata.ttl" download>Download RDF assertion of the Nutridata metadata (.ttl)</a>
+                    <a class="btn btn-primary" href="datasets/nutridata.zip" download>Download full dataset and Catalogue</a>
+                    <a class="btn btn-primary" href="datasets/nutridata-rdf.zip" download>Download full dataset, Catalogue and RDF</a>
+                    </div>
                   </div>
                 </div>
               </div>

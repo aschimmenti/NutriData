@@ -8,7 +8,7 @@ function cleanBarDiv() {
     $('#parent2').empty();
     $('#mapchart-parent').empty();
     $('#barchart-parent').empty()
-    $('#barchart-parent').append('<div id="barchartdiv"></div><div class="card"><div class="card-body"><h3 class="card-title">Download datasets used in this visualization</h3><a class="btn btn-primary" href="datasets/pathologies.csv" download>Download .csv</a><a class="btn btn-primary" href="datasets/pathologies-percentage.json" download>Download .json</a></div></div>')
+    $('#barchart-parent').append('<div id="barchartdiv"></div><div class="card"><div class="card-body"><h3 class="card-title">Download datasets used in this visualization</h3><a class="btn btn-primary" href="datasets/pathologies.zip" download>Download .zip file (.csv, .json)</a></div></div>')
 }
 
 function getNationsBarchart() {
@@ -17,7 +17,6 @@ function getNationsBarchart() {
     <h4 id="barchart-nation-title">Pathologies correlated to malnutrition</h4>
     <div id="nations-button-barchart"></div>
     <div id="barchart-parent">
-      <img class="dummy" src="images/pathologies.jpg">
     </div>`)
 
     $('#nations-button-barchart').empty()
@@ -39,6 +38,7 @@ function getNationsBarchart() {
         `)
       })
     })
+    getChart('Italy')
   }
 
 

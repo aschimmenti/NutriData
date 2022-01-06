@@ -33,6 +33,7 @@
     #chartdiv-calories {
       width: 100%;
       height: 600px;
+      font-size: smaller;
     }
     #mapchartdiv {
       width: 100%;
@@ -115,37 +116,37 @@
     <div class="container-fluid">
       <div class="row">
       <div class="col-lg-3 col-md-3 col-sm-3 col m-0">
-        <div class="card  border-0">
+        <div class="card  border-0 line-up">
           <div class="card-body">
             <h5 class="card-title">Food adequacy supply</h5>
             <p class="card-text">World map showing the percentage of food adequacy supply; 2018-2020</p>
             <button type="button" class="btn btn-info" onclick="getColorMap();">Show data</button>
           </div>
         </div>
-        <div class="card  border-0">
+        <div class="card  border-0 line-up">
           <div class="card-body">
             <h5 class="card-title">Daily Calories per country</h5>
             <p class="card-text">Linechart showing daily per capita supply of calories; 1960-2013</p>
             <button type="button" class="btn btn-info" onclick="getCaloriesNationsLinechart();">Show data</button>
           </div>
         </div>
-          <div class="card  border-0">
+          <div class="card  border-0 line-up">
             <div class="card-body">
-              <h5 class="card-title">Conditions</h5>
+              <h5 class="card-title">Malnutrition diseases in the world</h5>
               <p class="card-text">World map on conditions directly caused by poor or wrong nutrition. Select a condition and a year.</p>
               <button type="button" class="btn btn-info" onclick="mapChartButton();">Show data</button>
             </div>
           </div>
-          <div class="card  border-0">
+          <div class="card  border-0 line-up">
             <div class="card-body">
-              <h5 class="card-title">Pathologies</h5>
+              <h5 class="card-title">Pathologies by country</h5>
               <p class="card-text">Time series barchart showing pathologies correlated to malnutritions. Select a country</p>
               <button type="button" class="btn btn-info" onclick="getNationsBarchart();">Show data</button>            
             </div>
           </div>
-          <div class="card  border-0">
+          <div class="card  border-0 line-up">
             <div class="card-body">
-              <h5 class="card-title">GDP and Mortality (last 60 years)</h5>
+              <h5 class="card-title">Mortality, Life Expectancy and GDP (last 60 years) by country</h5>
               <p class="card-text">Linecharts showing time series on GDP and child mortality (5-24). Select a country</p>
               <button type="button" class="btn btn-info" onclick="getNationsLinechart();">Show data</button>
             </div>
