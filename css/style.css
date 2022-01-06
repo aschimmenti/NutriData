@@ -1011,6 +1011,7 @@ ul.no-bullets {
     color:rgba(75,197,184, 0.8);
     margin: auto;
     font-weight: bolder;
+    z-index: 10;
 }
 
 a, a:hover, a:focus, a:active {
