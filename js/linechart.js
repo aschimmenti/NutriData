@@ -23630,6 +23630,7 @@ function graphMortality(nation) {
     }
 
     var series1 = createSeries("value", "Series #1");
+    var series2 = createSeries("value", "Series #2");
 
 
     chart.legend = new am4charts.Legend();
