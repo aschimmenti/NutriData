@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>OpenNutrition</title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,600,700&display=swap"
+    rel="stylesheet" />
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <h3>
+              Nutri
+            </h3>
+            <span>data</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
+            <ul class="navbar-nav  ml-auto">
+              <li class="nav-item ">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="documentation.html"> Documentation </a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="metadata.html"> Metadata </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="visualizations.html"> Visualizations </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="catalogue.html">Catalogue</a>
+              </li>
+
+            </ul>
+
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+
+  <!-- course section -->
+
+  <section class="course_section layout_padding">
+    <div class="side_img">
+      <img src="images/side-img.png" alt="" />
+    </div>
+    <div class="container-fluid metadata-section">
+
+      <div class="row">
+
+
+        <div class="col-sm-4 col-md-4 col-lg-4 col">
+          <div class="index-ul">
+            <ul class="no-bullets">
+              <li>Datasets: </li>
+              <li><a href="#nutridef">Nutritional Deficiencies and Related Diseases</a></li>
+              <li><a href="#nutrimrt">Child Mortality Dataset</a></li>
+              <li><a href="#lifexp">Life Expectancy</a></li>
+              <li><a href="#nutriest">Malnutrition Estimates Dataset</a></li>
+              <li><a href="#nutrigdp">GDP per capita Dataset</a></li>
+              <li><a href="#nutrind">Food Insecurity Indicators</a></li>
+              <li><a href="#nutrical">Daily per capita Supply of Kilocalories</a></li>
+              <li><a href="#checklist">Download Checklist and RDF assertion of the metadata</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-8 col-md-8 col-lg-8 col">
+
+          <div class="row">
+            <div class="heading_container ml-5 mr-5">
+              <h3>
+                DATASETS METADATA SECTION
+              </h3>
+            </div>
+            <div class="col">
+              <div class="card-deck">
+                <div id="nutridef" class="metadata-content card">
+                  <div class="card-body">
+                    <h4 class="card-title">Nutritional Deficiencies and Related Diseases/Disorders Dataset</h4>
+                    <p class="card-text"><span class="category">Identifier</span>: (NutriData uri)</p>
+                    <p class="card-text"><span class="category">Title</span>: NutriData Nutritional Deficiencies and
+                      Related Diseases and Disorders</p>
+                    <p class="card-text"><span class="category">Description</span>: This dataset contains data from the
+                      Institute for Health Metrics and Evaluation, namely, from the GBD section, Global Burden of
+                      Disease. The dataset focuses on nutritional disorders and deficiencies of individuals whose age
+                      mainly ranges from 5 to 19 years old (adolescents).</p>
+                    <p class="card-text"><span class="category">Modified</span>: 20/11/2021</p>
+                    <p class="card-text"><span class="category">Source</span>: IHME-GBD_2019_DATA-27a144e6-1.csv, 
+                      IHME GBD API<a href="http://ghdx.healthdata.org/gbd-results-tool"
+                        target="_blank"> (link to the source)</a>. The dataset was created as a merge from various dataset (asthma, iron deficiency, vitamin A deficiency, diabetes mellitus II, protein energy malnutrition, liver-related diseases)  downloaded from the IHME-GBD API (for reproduction: all locations; all years; context: cause; years: 0-19; metric: percentage; measure: incidence;)</p>
+                    <p class="card-text"><span class="category">Theme</span>: Malnutrition, diseases, disorders</p>
+                    <p class="card-text"><span class="category">Format:</span> CSV, JSON</p>
+                    <p class="card-text"><span class="category">Periodicity</span>: Annual</p>
+                    <p class="card-text"><span class="category">Rights Holder</span>: IHME – Institute for Health
+                      Metrics and Evaluation, Global Burden of Disease</p>
+                    <p class="card-text"><span class="category">Subject</span>: Percentage of incidence for nutritional deficiencies and related diseases (e.g. Asthma, Cardiovascular diseases,
+                      Diabetes mellitus etc.) in people from 5 to 19 years old</p>
+                    <p class="card-text"><span class="category">Publisher</span>: Amanda Culoma, Giulia Massimino,
+                      Ariele Santello, Andrea Schimmenti</p>
+                    <p class="card-text"><span class="category">Creator</span>: Amanda Culoma, Giulia Massimino, Ariele
+                      Santello, Andrea Schimmenti</p>
+                    <p class="card-text"><span class="category">Language</span>: English</p>
+                    <p class="card-text"><span class="category">Temporal Coverage</span>: 2010-2018</p>
+                    <p class="card-text"><span class="category">Spatial Coverage</span>: World</p>
+                    <p class="card-text"><span class="category">URL</span>: (same as identifier)</p>
+                    <p class="card-text"><span class="category">Licence</span>: CC-BY-SA 4.0</p>
+                    <p class="card-text"><span class="category">Licence</span>: (same as URL)</p>
+                    <p class="card-text"><span class="category">Licence</span>: Completed</p>
+                    <a class="btn btn-primary" href="datasets/pathologies.csv" download>Download .csv</a>
+                    <a class="btn btn-primary" href="datasets/pathologies.json" download>Download .json</a>
+                    <a class="btn btn-primary" href="datasets/pathologies.zip" download>Download .zip</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div id="nutrimrt" class="metadata-content card">
+                  <div class="card-body">
+                    <h4 class="card-title">Child mortality rate 5-14 years old</h4>
+                    <p class="card-text"><span class="category">Identifier</span>: (Nutridata uri)</p>
+                    <p class="card-text"><span class="category">Title</span>: NutriData Child Mortality</p>
+                    <p class="card-text"><span class="category">Description</span>: This dataset contains data from the
+                      World Health Organization and from the UN IGME agency. It contains estimates, calculated by dividing the number of deaths by the population at risk during a certain time frame, on children between 5-14 years old.</p>
+                    <p class="card-text"><span class="category">Source</span>: child-mortality.csv<a
+                        href="https://www.who.int/data/gho/data/indicators/indicator-details/GHO/mortality-rate-for-5-14-year-olds-(probability-of-dying-per-1000-children-aged-5-14-years)"
+                        target="_blank"> (link to the source)</a>, 
+                        UNICEF-CME_DF_2021_WQ-1.0-download.csv, <a
+                        href="https://childmortality.org/data"
+                        target="_blank"> (link to the source)</a>
+                    </p>
+                    <p class="card-text"><span class="category">Theme</span>: Child mortality and burden of disease</p>
+                    <p class="card-text"><span class="category">Format</span>: CSV, JSON</p>
+                    <p class="card-text"><span class="category">Periodicity</span>: Annual</p>
+                    <p class="card-text"><span class="category">Rights Holder</span>: WHO, UN IGME</p>
+                    <p class="card-text"><span class="category">Subject</span>: The probability that a child aged 5 dies
+                      before reaching its 15th birthday, a rate of deaths per 1000 children.</p>
+                    <p class="card-text"><span class="category">Publisher</span>: Amanda Culoma, Giulia Massimino,
+                      Ariele Santello, Andrea Schimmenti</p>
+                    <p class="card-text"><span class="category">Creator</span>: Amanda Culoma, Giulia Massimino, Ariele
+                      Santello, Andrea Schimmenti</p>
+                    <p class="card-text"><span class="category">Language</span>: English</p>
+                    <p class="card-text"><span class="category">Temporal Coverage</span>: 2010-2018</p>
+                    <p class="card-text"><span class="category">Spatial Coverage</span>: World</p>
+                    <p class="card-text"><span class="category">URL</span>: (same as identifier)</p>
+                    <p class="card-text"><span class="category">Licence</span>: CC-BY-SA 4.0</p>
+                    <p class="card-text"><span class="category">Licence</span>: (same as URL)</p>
+                    <p class="card-text"><span class="category">Licence</span>: Completed</p>
+                    <a class="btn btn-primary" href="datasets/mortality.csv" download>Download .csv</a>
+                    <a class="btn btn-primary" href="datasets/mortality.json" download>Download .json</a>
+                    <a class="btn btn-primary" href="datasets/mortality.zip" download>Download .zip</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div id="lifexp" class="metadata-content card">
+                  <div class="card-body">
+                    <h4 class="card-title">Life expectancy</h4>
+                    <p class="card-text"><span class="category">Identifier</span>: (Nutridata uri)</p>
+                    <p class="card-text"><span class="category">Title</span>: NutriData Life Expectancy</p>
+                    <p class="card-text"><span class="category">Description</span>: This dataset contains data from Our World in Data and WHO on the life expectancy of people from birth, in available countries.</p>
+                    <p class="card-text"><span class="category">Source</span>: life-expectancy.csv<a
+                        href="https://ourworldindata.org/life-expectancy"
+                        target="_blank"> (link to the source)</a>, 
+                        data.csv, <a
+                        href="https://www.who.int/data/gho/data/indicators/indicator-details/GHO/life-expectancy-at-birth-(years)"
+                        target="_blank"> (link to the source)</a>
+                    </p>
+                    <p class="card-text"><span class="category">Theme</span>: Life expectancy</p>
+                    <p class="card-text"><span class="category">Format</span>: CSV, JSON</p>
+                    <p class="card-text"><span class="category">Periodicity</span>: Annual</p>
+                    <p class="card-text"><span class="category">Rights Holder</span>: James C. Riley, Our World in Data, WHO</p>
+                    <p class="card-text"><span class="category">Subject</span>: life expectancy of people from birth.</p>
+                    <p class="card-text"><span class="category">Publisher</span>: Amanda Culoma, Giulia Massimino,
+                      Ariele Santello, Andrea Schimmenti</p>
+                    <p class="card-text"><span class="category">Creator</span>: Amanda Culoma, Giulia Massimino, Ariele
+                      Santello, Andrea Schimmenti</p>
+                    <p class="card-text"><span class="category">Language</span>: English</p>
+                    <p class="card-text"><span class="category">Temporal Coverage</span>: 1950-2018</p>
+                    <p class="card-text"><span class="category">Spatial Coverage</span>: World</p>
+                    <p class="card-text"><span class="category">URL</span>: (same as identifier)</p>
+                    <p class="card-text"><span class="category">Licence</span>: CC-BY-SA 4.0</p>
+                    <p class="card-text"><span class="category">Licence</span>: (same as URL)</p>
+                    <p class="card-text"><span class="category">Licence</span>: Completed</p>
+                    <a class="btn btn-primary" href="datasets/life-expectancy.csv" download>Download .csv</a>
+                    <a class="btn btn-primary" href="datasets/life-expectancy.json" download>Download .json</a>
+                    <a class="btn btn-primary" href="datasets/life_expectancy.zip" download>Download .zip</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div id="nutriest" class="metadata-content card">
+                  <div class="card-body">
+                    <h4 class="card-title">Malnutrition Estimates Dataset</h4>
+                    <p class="card-text"><span class="category">Identifier</span>: (Nutridata uri)</p>
+                    <p class="card-text"><span class="category">Licence</span>: NutriData Children Malnutrition
+                      Estimates</p>
+                    <p class="card-text"><span class="category">Description</span>: This dataset contains data from
+                      UNICEF, WHO & World Bank’s Joint global database on child malnutrition. It estimates the number of
+                      children who show symptoms and effects of under- and malnutrition. The indicators (trends) are
+                      four: overweight, stunting, wasting (and severe wasting) and underweight.</p>
+                    <p class="card-text"><span class="category">Source</span>: malnutrition-estimates.csv, <a
+                        href="https://data.unicef.org/resources/dataset/malnutrition-data/"
+                        target="_blank">https://data.unicef.org/resources/dataset/malnutrition-data/</a> (stored in
+                      Unicef website)</p>
+                    <p class="card-text"><span class="category">Theme</span>: Child Malnutrition by indicators</p>
+                    <p class="card-text"><span class="category">Format</span>: CSV, JSON</p>
+                    <p class="card-text"><span class="category">Periodicity</span>: Annual</p>
+                    <p class="card-text"><span class="category">Rights Holder</span>: UNICEF, WHO, World Bank</p>
+                    <p class="card-text"><span class="category">Subject</span>: Country-level trends of 4 core child
+                      malnutrition indicators, along with national estimates and other ones such as geographic location,
+                      age and sex.</p>
+                    <p class="card-text"><span class="category">Publisher</span>: Amanda Culoma, Giulia Massimino,
+                      Ariele Santello, Andrea Schimmenti</p>
+                    <p class="card-text"><span class="category">Creator</span>: Amanda Culoma, Giulia Massimino, Ariele
+                      Santello, Andrea Schimmenti</p>
+                    <p class="card-text"><span class="category">Language</span>: English</p>
+                    <p class="card-text"><span class="category">Temporal Coverage</span>: 2000-2020</p>
+                    <p class="card-text"><span class="category">Spatial Coverage</span>: World</p>
+                    <p class="card-text"><span class="category">URL</span>: (same as identifier)</p>
+                    <p class="card-text"><span class="category">Licence</span>: CC-BY-SA 4.0</p>
+                    <p class="card-text"><span class="category">Licence</span>: (same as URL)</p>
+                    <p class="card-text"><span class="category">Licence</span>: Completed</p>
+                    <a class="btn btn-primary" href="datasets/malnutrition.csv" download>Download .csv</a>
+                    <a class="btn btn-primary" href="datasets/malnutrition.json" download>Download .json</a>
+                    <a class="btn btn-primary" href="datasets/malnutrition.zip" download>Download .zip</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div id="nutrigdp" class="metadata-content card">
+                  <div class="card-body">
+                    <h4 class="card-title">GDP per capita Dataset</h4>
+                    <p class="card-text"><span class="category">Identifier</span>: (Nutridata uri)</p>
+                    <p class="card-text"><span class="category">Licence</span>: NutriData GDP-per-capita</p>
+                    <p class="card-text"><span class="category">Description</span>: This dataset contains data from
+                      World Bank. It shows the list of countries by the gross domestic product per capita.</p>
+                    <p class="card-text"><span class="category">Source</span>:
+                      API_NY.GDP.MKTP.CD_DS2_en_csv_v2_3469429.csv<a
+                        href="https://data.worldbank.org/indicator/NY.GDP.MKTP.CD"
+                        target="_blank"> (link to the source)</a> </p>
+                    <p class="card-text"><span class="category">Theme</span>: GDP per capita</p>
+                    <p class="card-text"><span class="category">Format</span>: CSV, JSON</p>
+                    <p class="card-text"><span class="category">Periodicity</span>: Annual</p>
+                    <p class="card-text"><span class="category">Rights Holder</span>: World Bank, Our World in Data</p>
+                    <p class="card-text"><span class="category">Subject</span>: List of countries by GDP per capita</p>
+                    <p class="card-text"><span class="category">Publisher</span>: Amanda Culoma, Giulia Massimino,
+                      Ariele Santello, Andrea Schimmenti</p>
+                    <p class="card-text"><span class="category">Creator</span>: Amanda Culoma, Giulia Massimino, Ariele
+                      Santello, Andrea Schimmenti</p>
+                    <p class="card-text"><span class="category">Language</span>: English</p>
+                    <p class="card-text"><span class="category">Temporal Coverage</span>: 2003-2020</p>
+                    <p class="card-text"><span class="category">Spatial Coverage</span>: World</p>
+                    <p class="card-text"><span class="category">URL</span>: (same as identifier)</p>
+                    <p class="card-text"><span class="category">Licence</span>: CC-BY-SA 4.0</p>
+                    <p class="card-text"><span class="category">Licence</span>: (same as URL)</p>
+                    <p class="card-text"><span class="category">Licence</span>: Completed</p>
+                    <a class="btn btn-primary" href="datasets/gdp.csv" download>Download .csv</a>
+                    <a class="btn btn-primary" href="datasets/gdp.json" download>Download .json</a>
+                    <a class="btn btn-primary" href="datasets/gdp.zip" download>Download .zip</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div id="nutrind" class="metadata-content card">
+                  <div class="card-body">
+                    <h4 class="card-title">Food Insecurity Indicators</h4>
+                    <p class="card-text"><span class="category">Identifier</span>: (Nutridata uri)</p>
+                    <p class="card-text"><span class="category">Licence</span>: NutriData Food Insecurity Indicators</p>
+                    <p class="card-text"><span class="category">Description</span>: This dataset presents the core set
+                      of food security indicators. Indicators are classified along the four dimensions of food security
+                      -- availability, access, utilization and stability; data were filtered by the featured indicator
+                      "Average dietary energy supply adequacy (percent) (3-year average)</p>
+                    <p class="card-text"><span class="category">Source</span>: foodsupplyadequacy.csv <a
+                        href="https://www.fao.org/faostat/en/?#data/FS" target="_blank">
+                         (link to the source) </a> </p>
+                    <p class="card-text"><span class="category">Theme</span>: Food Insecurity Indicators</p>
+                    <p class="card-text"><span class="category">Format</span>: CSV, JSON</p>
+                    <p class="card-text"><span class="category">Periodicity</span>: Annual</p>
+                    <p class="card-text"><span class="category">Rights Holder</span>: FAO - Food and Agriculture
+                      Organization of the United Nations</p>
+                    <p class="card-text"><span class="category">Subject</span>: List of food insecurity indicators per
+                      country over the years</p>
+                    <p class="card-text"><span class="category">Publisher</span>: Amanda Culoma, Giulia Massimino,
+                      Ariele Santello, Andrea Schimmenti</p>
+                    <p class="card-text"><span class="category">Creator</span>: Amanda Culoma, Giulia Massimino, Ariele
+                      Santello, Andrea Schimmenti</p>
+                    <p class="card-text"><span class="category">Language</span>: English</p>
+                    <p class="card-text"><span class="category">Temporal Coverage</span>: 2000-2020</p>
+                    <p class="card-text"><span class="category">Spatial Coverage</span>: World</p>
+                    <p class="card-text"><span class="category">URL</span>: (same as identifier)</p>
+                    <p class="card-text"><span class="category">Licence</span>: CC-BY-SA 4.0</p>
+                    <p class="card-text"><span class="category">Licence</span>: (same as URL)</p>
+                    <p class="card-text"><span class="category">Licence</span>: Completed</p>
+                    <a class="btn btn-primary" href="datasets/foodsupplyadequacy.csv" download>Download .csv</a>
+                    <a class="btn btn-primary" href="datasets/foodsupplyadequacy.json" download>Download .json</a>
+                    <a class="btn btn-primary" href="datasets/foodsupplyadequacy.zip" download>Download .zip</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div id="nutrical" class="metadata-content card">
+                  <div class="card-body">
+                    <h4 class="card-title">Daily per capita Supply of Kilocalories</h4>
+                    <p class="card-text"><span class="category">Identifier</span>: (Nutridata uri)</p>
+                    <p class="card-text"><span class="category">Licence</span>: NutriData Daily per capita Supply of
+                      Kilocalories</p>
+                    <p class="card-text"><span class="category">Description</span>: This dataset (sources: FAO and Our
+                      World in Data) contains the supply of kilocalories per person per day. Daily caloric supply is
+                      defined as the average per capita caloric availability. It indicates the caloric availability
+                      delivered to households.</p>
+                    <p class="card-text"><span class="category">Source</span>: daily-per-capita-supply-of-calories.csv,
+                      <a href="https://ourworldindata.org/grapher/daily-per-capita-supply-of-calories" target="_blank">
+                         (link to the source)</a>
+                    </p>
+                    <p class="card-text"><span class="category">Theme</span>: Daily per capita supply of kilocalories
+                      per person</p>
+                    <p class="card-text"><span class="category">Format</span>: CSV, JSON</p>
+                    <p class="card-text"><span class="category">Periodicity</span>: Annual</p>
+                    <p class="card-text"><span class="category">Rights Holder</span>: FAO - Food and Agriculture
+                      Organization of the United Nations, Our World in Data</p>
+                    <p class="card-text"><span class="category">Subject</span>: List of supply of kilokalories per
+                      person per day (per country)</p>
+                    <p class="card-text"><span class="category">Publisher</span>: Amanda Culoma, Giulia Massimino,
+                      Ariele Santello, Andrea Schimmenti</p>
+                    <p class="card-text"><span class="category">Creator</span>: Amanda Culoma, Giulia Massimino, Ariele
+                      Santello, Andrea Schimmenti</p>
+                    <p class="card-text"><span class="category">Language</span>: English</p>
+                    <p class="card-text"><span class="category">Temporal Coverage</span>: 1961-2013</p>
+                    <p class="card-text"><span class="category">Spatial Coverage</span>: World</p>
+                    <p class="card-text"><span class="category">URL</span>: (same as identifier)</p>
+                    <p class="card-text"><span class="category">Licence</span>: CC-BY-SA 4.0</p>
+                    <p class="card-text"><span class="category">Licence</span>: (same as URL)</p>
+                    <p class="card-text"><span class="category">Licence</span>: Completed</p>
+                    <a class="btn btn-primary" href="datasets/dailycalories.csv" download>Download .csv</a>
+                    <a class="btn btn-primary" href="datasets/dailycalories.json" download>Download .json</a>
+                    <a class="btn btn-primary" href="datasets/dailycalories.zip" download>Download .zip</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div id="checklist" class="metadata-content card">
+                  <div class="card-body text-center">
+                    <h4 class="card-title">Checklist and RDF assertion of the metadata</h4>
+                    <p class="card-text">Download the checklist of the Open Nutrition dataset in .pdf format along with the RDF assertion of the metadata.</p>
+                    <div class="btn-group-vertical m-auto">
+                    <a class="btn btn-primary m-1" href="datasets/NutriData-checklist.pdf" download>Download Check List</a>
+                    <a class="btn btn-primary m-1" href="datasets/rdf_nutridata.ttl" download>Download RDF assertion of the Nutridata metadata (.ttl)</a>
+                    <a class="btn btn-primary m-1" href="datasets/nutridata.zip" download>Download full dataset and Catalogue</a>
+                    <a class="btn btn-primary m-1" href="datasets/nutridata-rdf.zip" download>Download full dataset, Catalogue and RDF</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- end course section -->
+
+  <!-- contact section -->
+
+  <section class="contact_section  layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="detail-box">
+            <!-- <div class="heading_container">
+              <h3>
+                Explore
+              </h3>
+              <p>
+                It is a long established fact that a reader will be distracted
+                by the readable
+              </p>
+            </div> -->
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="info_menu">
+            <h5 style="color: #ffffff; font-weight: 600;">
+              QUICK LINKS
+            </h5>
+            <ul class="navbar-nav  ">
+              <li class="nav-item">
+                <a style="color: #ffffff;" class="nav-link" href="index.html">Home <span
+                    class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a style="color: #ffffff;" class="nav-link" href="documentation.html"> Documentation </a>
+              </li>
+              <li class="nav-item active">
+                <a style="color: #ffffff;" class="nav-link" href="metadata.html"> Metadata </a>
+              </li>
+              <li class="nav-item">
+                <a style="color: #ffffff;" class="nav-link" href="visualizations.html"> Visualizations </a>
+              </li>
+              <li class="nav-item">
+                <a style="color: #ffffff;" class="nav-link" href="catalogue.html">Catalogue</a>
+              </li>
+
+
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_news">
+            <h5 style="color: #ffffff; font-weight: 600;">
+              TO KNOW MORE ABOUT US
+            </h5>
+            <div class="btn-box">
+              <a style="color: #ffffff;" href="https://github.com/aschimmenti/NutriData" target="_blank">
+                Github Repository
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- end contact section -->
+
+  <!-- footer section -->
+  <footer class="container-fluid footer_section">
+    <p>
+      OpenNutrition &copy; 2021
+      <a href=""></a>
+    </p>
+
+  </footer>
+
+
+  <footer class="container-fluid footer_section">
+
+    <p>
+      Created by Amanda Culoma, Andrea Schimmenti, Ariele Santello and Giulia Massimino <br> for the final project of
+      the Open Access and Digital Ethics course held by Monica Palmiranimaster degree course DHDKUniversity of Bologna.
+      <br>
+      <br>
+      This work is licensed under a <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons
+        Attribution-ShareAlike 4.0 International License.</a>
+      <br>
+      <br>
+      <a rel="license" target="blank" href="https://creativecommons.org/licenses/by-sa/4.0/"><img
+          alt="Creative Commons License" style="border-width:0"
+          src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"></a>
+      <br>
+      <br>
+    </p>
+
+
+  </footer>
+  <!-- footer section -->
+
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+
+</body>
+
+</html>
