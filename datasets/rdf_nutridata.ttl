@@ -9,7 +9,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 @prefix prov: <http://www.w3.org/ns/prov#>.
 
-<data/id>
+<NutriData/datasets>
     a dcat:Catalogue;    
     dct:title "NutriData catalogue";
     dct:description "Catalogue of NutriData datasets.";
@@ -18,12 +18,13 @@
     dct:publisher "Ariele Santello";
     dct:publisher "Andrea Schimmenti";
     dct:modified "2022/01/03"^^xsd:date;
-    dcat:dataset <datasets/data.zip/pathologies.csv>;
-    dcat:dataset <datasets/data.zip/mortality.csv>;
-    dcat:dataset <datasets/data.zip/malnutrition.csv>;
-    dcat:dataset <datasets/data.zip/gdp.csv>;
-    dcat:dataset <datasets/data.zip/foodsupplyadequacy.csv>;
-    dcat:dataset <datasets/data.zip/dailycalories.csv>;
+    dcat:dataset <datasets/pathologies.zip>;
+    dcat:dataset <datasets/mortality.zip>;
+    dcat:dataset <datasets/life_expectancy.zip>;
+    dcat:dataset <datasets/malnutrition.zip>;
+    dcat:dataset <datasets/gdp.zip>;
+    dcat:dataset <datasets/foodsupplyadequacy.zip>;
+    dcat:dataset <datasets/dailycalories.zip>;
     foaf:homepage <catalogue.html>;
     dct:language <http://publications.europa.eu/resource/authority/language/ENG>;
     dct:issued "2022/01/03"^^xsd:date;
@@ -31,9 +32,9 @@
     dct:license <https://creativecommons.org/licenses/by-sa/4.0/>;
     dct:rights "Under this licence you may copy, distribute, display and perform the work and make derivative works and remixes based on it, even for commercial purposes, only if you give the author or licensor the credits (attribution) in the manner specified by the license, and indicating if changes were made.You may distribute derivative works only under a licence identical to the licence that governs the original work.".
 
-<datasets/data.zip/pathologies.csv>  
+<datasets/pathologies.zip>  
     a dcat:Dataset;
-    dct:identifier <datasets/data.zip/pathologies.csv>;
+    dct:identifier <datasets/pathologies.zip>;
     dct:title "NutriData - Nutritional Deficiencies dataset";
     dct:description "This dataset contains data from the Institute for Health Metrics and Evaluation, namely, from the GBD section, Global Burden of Disease. The dataset focuses on nutritional disorders and deficiencies of individuals whose age mainly ranges from 5 to 19 years old (adolescents). ";
     dct:modified "2022/01/03"^^xsd:date;
@@ -54,20 +55,20 @@
     dcat:startDate "2010"^^xsd:year;
     dcat:endDate "2018"^^xsd:year;
     dct:spatial <http://dbpedia.org/ontology/world>;
-    dcat:distribution <dataset/data.json>;
-    dcat:distribution <datasets/.csv>;
+    dcat:distribution <dataset/pathologies.json>;
+    dcat:distribution <datasets/pathologies.csv>;
     dct:format <http://publications.europa.eu/resource/authority/file-type/CSV>;
     dct:format <http://publications.europa.eu/resource/authority/file-type/JSON>;
     dcat:accessURL <catalogue.html>;
     dct:license <https://creativecommons.org/licenses/by-sa/4.0/>;
     prov:wasDerivedFrom <http://ghdx.healthdata.org/gbd-results-tool>;
-    dcat:downloadURL <dataset/data.zip>;
-    dcat:byteSize "318 KB";
+    dcat:downloadURL <dataset/pathologies.zip>;
+    dcat:byteSize "1579 KB";
     adms:status <http://purl.org/adms/status/Completed>.
 
-<datasets/data.zip/mortality.csv>  
+<datasets/mortality.zip>  
     a dcat:Dataset;
-    dct:identifier <datasets/data.zip/mortality.csv>;
+    dct:identifier <datasets/mortality.zip>;
     dct:title "NutriData - Child Mortality dataset";
     dct:description "This dataset contains data from the World Health Organization. It is an estimation (a statistical model) that predicts the probability that a child aged 5 dies before reaching its 15th birthday.";
     dct:modified "2022/01/03"^^xsd:date;
@@ -88,20 +89,55 @@
     dcat:startDate "2010"^^xsd:year;
     dcat:endDate "2018"^^xsd:year;
     dct:spatial <http://dbpedia.org/ontology/world>;
-    dcat:distribution <datasets/.json>;
-    dcat:distribution <datasets/.csv>;
+    dcat:distribution <datasets/mortality.json>;
+    dcat:distribution <datasets/mortality.csv>;
     dct:format <http://publications.europa.eu/resource/authority/file-type/CSV>;
     dct:format <http://publications.europa.eu/resource/authority/file-type/JSON>;
     dcat:accessURL <catalogue.html>;
     dct:license <https://creativecommons.org/licenses/by-sa/4.0/>;
     prov:wasDerivedFrom  <https://www.who.int/data/gho/data/indicators/indicator-details/GHO/mortality-rate-for-5-14-year-olds-(probability-of-dying-per-1000-children-aged-5-14-years)>;
-    dcat:downloadURL <datasets/data.zip>;
+    dcat:downloadURL <datasets/mortality.zip>;
     dcat:byteSize "5 KB";
     adms:status <http://purl.org/adms/status/Completed>.
 
-<datasets/data.zip/malnutrition.csv>  
+<datasets/life_expectancy.zip>  
     a dcat:Dataset;
-    dct:identifier <datasets/data.zip/malnutrition.csv>;
+    dct:identifier <datasets/life_expectancy.zip>;
+    dct:title "NutriData - Life Expectancy";
+    dct:description "This dataset contains data from Our World in Data and WHO on the life expectancy of people from birth, in available countries.";
+    dct:modified "2022/01/03"^^xsd:date;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/HEAL>;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI>;
+    dct:rightsHolder <https://www.who.int/data/gho/data/>;
+    dct:rightsHolder <https://www.ourworldindata.org/>;
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/ANNUAL>;
+    dct:subject <http://eurovoc.europa.eu/100210>, <http://eurovoc.europa.eu/100215>, <http://dd.eionet.europa.eu/vocabulary/eurostat/mortalit/>;
+    dcat:contactPoint "amanda.culoma@studio.unibo.it", "giulia.massimino@studio.unibo.it", "ariele.santello@studio.unibo.it", "andrea.schimmenti@studio.unibo.it";
+    dct:publisher "Amanda Culoma", "Giulia Massimino", "Ariele Santello", "Andrea Schimmenti";
+    dct:creator "Amanda Culoma", "Giulia Massimino", "Ariele Santello", "Andrea Schimmenti";
+    dct:issued "2022/01/03"^^xsd:date;
+    dct:language <http://publications.europa.eu/resource/authority/language/ENG>;
+    dcat:keyword "health";
+    dcat:keyword "population";
+    dcat:keyword "life expectancy";
+    dct:source <https://www.who.int/data/gho/data/indicators/indicator-details/GHO/life-expectancy-at-birth-(years)>; 
+    dcat:startDate "2010"^^xsd:year;
+    dcat:endDate "2018"^^xsd:year;
+    dct:spatial <http://dbpedia.org/ontology/world>;
+    dcat:distribution <datasets/life_expectancy.json>;
+    dcat:distribution <datasets/life_expectancy.csv>;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/CSV>;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/JSON>;
+    dcat:accessURL <catalogue.html>;
+    dct:license <https://creativecommons.org/licenses/by-sa/4.0/>;
+    prov:wasDerivedFrom  <https://www.who.int/data/gho/data/indicators/indicator-details/GHO/life-expectancy-at-birth-(years)>;
+    dcat:downloadURL <datasets/life_expectancy.zip>;
+    dcat:byteSize "5 KB";
+    adms:status <http://purl.org/adms/status/Completed>.
+
+<datasets/malnutrition.zip>  
+    a dcat:Dataset;
+    dct:identifier <datasets/malnutrition.zip>;
     dct:title "NutriData - Children Malnutrition Estimates";
     dct:description "This dataset contains data from UNICEF, WHO & World Bank’s Joint global database on child malnutrition. It estimates the number of children who show symptoms and effects of under- and malnutrition. The indicators (trends) are four: overweight, stunting, wasting (and severe wasting) and underweight.";
     dct:modified "2022/01/03"^^xsd:date;
@@ -123,20 +159,20 @@
     dcat:startDate "2000"^^xsd:year;
     dcat:endDate "2018"^^xsd:year;
     dct:spatial <http://dbpedia.org/ontology/world>;
-    dcat:distribution <dataset/data.json>;
-    dcat:distribution <datasets/.csv>;
+    dcat:distribution <dataset/malnutrition.json>;
+    dcat:distribution <datasets/malnutrition.csv>;
     dct:format <http://publications.europa.eu/resource/authority/file-type/CSV>;
     dct:format <http://publications.europa.eu/resource/authority/file-type/JSON>;
     dcat:accessURL <catalogue.html>;
     dct:license <https://creativecommons.org/licenses/by-sa/4.0/>;
     prov:wasDerivedFrom <https://data.unicef.org/resources/dataset/malnutrition-data/>;
-    dcat:downloadURL <dataset/data.zip>;
+    dcat:downloadURL <dataset/malnutrition.zip>;
     dcat:byteSize "1309 KB";
     adms:status <http://purl.org/adms/status/Completed>.
 
-<dataset/data.zip/gdp.csv>   
+<dataset/gdp.zip>   
     a dcat:Dataset;
-    dct:identifier <dataset/data.zip/gdp.csv>;
+    dct:identifier <dataset/gdp.zip>;
     dct:title "NutriData - GDP-per-capita";
     dct:description "This dataset contains data from World Bank. It shows the list of countries by the gross domestic product per capita.";
     dct:modified "2022/01/03"^^xsd:date;
@@ -157,20 +193,20 @@
     dcat:startDate "2003"^^xsd:year;
     dcat:endDate "2020"^^xsd:year;
     dct:spatial <http://dbpedia.org/ontology/world>;
-    dcat:distribution <dataset/data.json>;
-    dcat:distribution <datasets/.csv>;
+    dcat:distribution <dataset/gdp.json>;
+    dcat:distribution <datasets/gdp.csv>;
     dct:format <http://publications.europa.eu/resource/authority/file-type/CSV>;
     dct:format <http://publications.europa.eu/resource/authority/file-type/JSON>;
     dcat:accessURL <catalogue.html>;
     dct:license <https://creativecommons.org/licenses/by-sa/4.0/>;
     prov:wasDerivedFrom <https://data.worldbank.org/indicator/NY.GDP.MKTP.CD>;
-    dcat:downloadURL <dataset/data.zip>;
+    dcat:downloadURL <dataset/gdp.zip>;
     dcat:byteSize "10 KB";
     adms:status <http://purl.org/adms/status/Completed>.
 
-<datasets/data.zip/foodsupplyadequacy.csv>   
+<datasets/foodsupplyadequacy.zip>   
     a dcat:Dataset;
-    dct:identifier <datasets/data.zip/foodsupplyadequacy.csv>;
+    dct:identifier <datasets/foodsupplyadequacy.zip>;
     dct:title "NutriData - Food Insecurity Indicators";
     dct:description "This dataset presents the core set of food security indicators. Indicators are classified along the four dimensions of food security -- availability, access, utilization and stability; data were filtered by the featured indicator "Average dietary energy supply adequacy (percent) (3-year average)";
     dct:modified "2022/01/03"^^xsd:date;
@@ -191,20 +227,20 @@
     dcat:startDate "2000"^^xsd:year;
     dcat:endDate "2020"^^xsd:year;
     dct:spatial	<http://dbpedia.org/ontology/world>;
-    dcat:distribution <datasets/childcare.csv>;
-    dcat:distribution <datasets/childcare.json>;
+    dcat:distribution <datasets/foodsupplyadequacy.csv>;
+    dcat:distribution <datasets/foodsupplyadequacy.json>;
     dct:format <http://publications.europa.eu/resource/authority/file-type/CSV>;
     dct:format <http://publications.europa.eu/resource/authority/file-type/JSON>;
     dcat:accessURL <catalogue.html>;
     dct:license	<https://creativecommons.org/licenses/by-sa/4.0/>;
     prov:wasDerivedFrom <https://www.fao.org/faostat/en/?#data/FS>;
-    dcat:downloadURL <datasets/childcare.zip>;
+    dcat:downloadURL <datasets/foodsupplyadequacy.zip>;
     dcat:byteSize "13 KB";
     adms:status <http://purl.org/adms/status/Completed>.
 
-<datasets/data.zip/dailycalories.csv> 
+<datasets/dailycalories.zip> 
     a dcat:Dataset;
-    dct:identifier <datasets/data.zip/dailycalories.csv> ;
+    dct:identifier <datasets/dailycalories.zip> ;
     dct:title "NutriData - Daily per capita Supply of Kilocalories";
     dct:description "This dataset (sources: FAO and Our World in Data) contains the supply of kilocalories per person per day. Daily caloric supply is defined as the average per capita caloric availability. It indicates the caloric availability delivered to households.";
     dct:issued "2022/01/03"^^xsd:date;
@@ -225,14 +261,14 @@
     dcat:startDate "1961"^^xsd:year;
     dcat:endDate "2013"^^xsd:year;
     dct:spatial	dct:spatial	<http://dbpedia.org/ontology/world>;
-    dcat:distribution <datasets/digital_economy.csv>;
-    dcat:distribution <datasets/digital_economy.json>;
+    dcat:distribution <datasets/dailycalories.csv>;
+    dcat:distribution <datasets/dailycalories.json>;
     dct:format <http://publications.europa.eu/resource/authority/file-type/CSV>;
     dct:format <http://publications.europa.eu/resource/authority/file-type/JSON>;
     dcat:accessURL <catalogue.html>;
     dct:license	<https://creativecommons.org/licenses/by-sa/4.0/>;
     prov:wasDerivedFrom <https://ourworldindata.org/grapher/daily-per-capita-supply-of-calories>;
-    dcat:downloadURL <datasets/digital_economy.zip>;
+    dcat:downloadURL <datasets/dailycalories.zip>;
     dcat:byteSize "4 KB";
     adms:status <http://purl.org/adms/status/Completed>.
 
