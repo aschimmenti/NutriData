@@ -66,7 +66,7 @@ To deepen the medical and sanitary aspect of the general malnutrition problem, w
 ### General Analysis
 
 
-To see the entire explanatory table about the general analysis click [here](https://github.com/aschimmenti/NutriData/blob/main/metadata.html). --> fix url link to page 
+To see the entire explanatory table about the general analysis click [here](https://aschimmenti.github.io/NutriData/metadata.html).  
 
 
 ### Quality analysis
