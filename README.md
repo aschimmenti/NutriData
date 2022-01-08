@@ -61,7 +61,7 @@ To deepen the medical and sanitary aspect of the general malnutrition problem, w
 * [Nutrition and Early Brain Development](http://www.urbanchildinstitute.org/articles/updates/nutrition-and-early-brain-development)
 
 * [Feeding Behaviour of Infants and Young Children and Its Impact on Child Psychosocial and Emotional Development](https://www.child-encyclopedia.com/child-nutrition/according-experts/feeding-behaviour-infants-and-young-children-and-its-impact-child)
-* 
+
 
 ### General Analysis
 
