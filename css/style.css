@@ -471,8 +471,13 @@ html{
       -ms-flex-pack: center;
           justify-content: center;
 }
+.heading_container a {
+  display: inline-block;
+  color: #133e3f;
+  background-color:#ffffff;
+}
 
-.course_section .btn-box a {
+.course_section .btn-box  a {
   display: inline-block;
   padding: 8px 45px;
   background-color: #133e3f;
@@ -938,6 +943,8 @@ html{
   color: #787878;
 }
 
+
+
 .footer_section a:hover {
   color: #fdda6e;
 }
@@ -950,7 +957,7 @@ html{
 #barchart-nation-title, #map-nation-title, #line-nation-title {
   font-size: 3rem;
   color: black;
-  
+
 }
 
 
@@ -974,7 +981,7 @@ html{
 }
 
 .viztitle {
- font-size: 4rem; 
+ font-size: 4rem;
  margin: 4vh 4vh;
 }
 
@@ -1047,4 +1054,3 @@ a:hover {
 .card-text {
   font-size: 1.1rem!important;
 }
-

@@ -376,6 +376,10 @@ a:focus {
       &::before {
         left: -2px;
       }
+    a {
+      text-decoration: none;
+      
+    }
     }
   }
 
