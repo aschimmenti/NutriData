@@ -10,11 +10,12 @@ When one starts approaching the studies concerning eating behavior of children a
 
 A direct consequence of unhealthy eating habits acquired in the family context may translate in a multiplicity of facets that a problem related to eating behavior can have:
 
-Overeating.
-Poor eating or not gaining sufficient weight.
-Feeding behavior problems.
-Unusual choices. Pica, or the ingestion of non-food substances
-Unhealthy food choices
+- Overeating.
+- Poor eating or not gaining sufficient weight.
+- Feeding behavior problems.
+- Unusual choices. Pica, or the ingestion of non-food substances
+- Unhealthy food choices
+
 Besides, an optimal diet for children and young adults should include regular eating patterns and a variety of foods, able to guarantee a good mood and good behavior to enhance learning and other fundamental social activities. Overall, an unhealthy diet seems to depend on several factors such as poverty, urbanization, climate change, and poor food choices.
 
 In our modern society, characterized by technological advancement, the problem is no longer just providing access to food for all children or providing access to an adequate amount of food, but providing access to both quality food and qualitative nutrition education that allows one to maintain a healthy dietary pattern over time. Adolescents are the ones particularly affected by inappropriate marketing and advertising campaigns, especially young people who live in highly urbanized areas and therefore have easier access to ultra-processed foods, highly sweetened beverages, and fast food. An interesting finding in this research regards the spread of this issue in children and adolescents who live in marginal regions and in conditions of poverty. The consequence is the global increase of obesity(overweight). The proportion of overweight children between the ages of 5 and 19 has doubled from one in 10 to one in 5 over a period of time from 2000 to 2016. This trend is also confirmed in high-income countries. E.g., in the United Kingdom, childhood obesity is twice as high in poor areas as in richer areas. Another factor that has a dramatic impact on the global percentage of malnutrition is the one linked to the climate crisis. In particular, the areas affected by drought see a dramatic decrease in both quantity and quality of the available food.
@@ -65,7 +66,7 @@ To deepen the medical and sanitary aspect of the general malnutrition problem, w
 ### General Analysis
 
 
-To see the entire explanatory table about the general analysis click here.
+To see the entire explanatory table about the general analysis click [here](https://github.com/aschimmenti/NutriData/blob/main/metadata.html). --> fix url link to page 
 
 
 ### Quality analysis
