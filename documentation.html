@@ -171,7 +171,7 @@
                         They try to use data as recent as possible and they make them open, transparent, and accessible to a wide as possible audience. All global, regional, and national datasets are freely available and downloadable.</p>
                     <h5 style="color: #20c997;">World Health Organization:</h5>
                       <p>for what concerns the overview of the dataset, the data are fully described and there are a large number of indicators to choose among, moreover, each dataset is accompanied by its corresponding metadata.
-                        Data are accurate and reliable since they come from population-based sources (household surveys, civil registration systems of vital events) and institution-based sources (administrative and operational activities of institutions, such as health facilities). 
+                        Data are accurate and reliable since they come from population-based sources (household surveys, civil registration systems of vital events) and institution-based sources (administrative and operational activities of institutions, such as health facilities).
                         Availability and quality of data are guaranteed.</p>
                     <h5 style="color: #20c997;">UNICEF:</h5>
                       <p>UNICEF’s Data & Analytics (D&A) team is the global go-to for data on children.
@@ -241,8 +241,7 @@
                   <p>The WHO Office of Compliance, Risk Management and Ethics (CRE) promotes transparency and management of corporate-level risk, within the framework of WHO’s ethical principles.
                     To this end, CRE promotes the practice of the ethical principles derived from the international civil service standards of conduct for all WHO staff and associated personnel.
                     Great stress is given to contractors and collaborators to not perpetuate sexual exploitation and abuse of any kind.
-CRE provides clear and action-oriented advice in a secure and confidential environment where individuals can freely consult on ethical issues.
-</p>
+                    CRE provides clear and action-oriented advice in a secure and confidential environment where individuals can freely consult on ethical issues.</p>
 
                   <h5 style="color: #20c997;">UNICEF</h5>
                   <p>The dataset is in accordance with the highest standards of integrity, including honesty, truthfulness, and fairness.
@@ -267,13 +266,57 @@ CRE provides clear and action-oriented advice in a secure and confidential envir
                     So the organization share the same aim of UNICEF in supporting countries and to strengthen their capacities to make informed decisions.</p>
 
                   <h4>Technical analysis</h4>
-                  <p>The datasets have been modified according to well-established practices in data science: the programming language used, Python 3.8, 
-                    allows a wide, fast and simple interaction with .csv formats, a format that we have found to be the most common for the spread of open data. 
-                    We used the Regex, Pandas, Csv and Json libraries to manipulate this data. 
-                    To convert names e.g. of nations from natural language to ISO2 and ISO3 and vice versa we used the <a style="border: none; color: black; padding:0; background-color: #ffffff;" target="_blank" href="https://github.com/konstantinstadler/country_converter" onmouseover="this.style.color='#20c997'" onmouseout="this.style.color='black'">Country Converter</a> library. 
-                    The main strategy at the computational level was to convert the datasets into dictionaries to be able to manipulate them, 
+                  <p>The datasets have been modified according to well-established practices in data science: the programming language used, Python 3.8,
+                    allows a wide, fast and simple interaction with .csv formats, a format that we have found to be the most common for the spread of open data.
+                    We used the Regex, Pandas, Csv and Json libraries to manipulate this data.
+                    To convert names e.g. of nations from natural language to ISO2 and ISO3 and vice versa we used the <a style="border: none; color: black; padding:0; background-color: #ffffff;" target="_blank" href="https://github.com/konstantinstadler/country_converter" onmouseover="this.style.color='#20c997'" onmouseout="this.style.color='black'">Country Converter</a> library.
+                    The main strategy at the computational level was to convert the datasets into dictionaries to be able to manipulate them,
                     mash-up between them, and then return in .json and .csv format.
                     For the visualizations we used the JavaScript language with the JQuery and <a style="border: none; color: black; padding:0; background-color: #ffffff;" target="_blank" href="https://www.amcharts.com" onmouseover="this.style.color='#20c997'" onmouseout="this.style.color='black'">Amcharts</a> libraries (versions 4 and 5).</p>
+
+                  <h5 style="color: #20c997;">World Bank Group:</h5>
+                    <p><b>Format</b>: csv, excel, xml.</p>
+                    <p><b>Metadata</b>: They are divided into different groups. Metadata about series contain information about the type of license (CC-BY-SA 4.0), the name of the indicator, its code and its long definition. The country metadata contain information on country codes, their extended names, region, currency, census year, household survey, and many other pertinent information about individual countries.</p>
+                    <p><b>URI</b>: https://databank.worldbank.org/reports.aspx?source=2&type=metadata&series=NY.GDP.MKTP.CD</p>
+                    <p><b>Provenance</b>: https://databank.worldbank.org/reports.aspx?source=2&type=metadata&series=NY.GDP.MKTP.CD</p>
+
+                  <h5 style="color: #20c997;">IHME:</h5>
+                    <p><b>Format</b>: csv.</p>
+                    <p><b>Metadata</b>: relevant metadata about soruces can be requested via email</p>
+                    <p><b>URI</b>: http://ghdx.healthdata.org/gbd-results-tool</p>
+                    <p><b>Provenance</b>: http://ghdx.healthdata.org/gbd-results-tool</p>
+
+                  <h5 style="color: #20c997;">World Health Organization:</h5>
+                    <p><b>Format</b>: pdf, png, csv.</p>
+                    <p><b>Metadata</b>: WHO provides many metadata including those about indicator names, short names, data type, indicator Id, topics, method of measurement, method of estimation, and unit of measure.</p>
+                    <p><b>URI</b>: https://www.who.int/data/gho/data/indicators/indicator-details/GHO/mortality-rate-for-5-14-year-olds-(probability-of-dying-per-1000-children-aged-5-14-years)</p>
+                    <p><b>Provenance</b>: https://www.who.int/data/gho/data/indicators/indicator-details/GHO/mortality-rate-for-5-14-year-olds-(probability-of-dying-per-1000-children-aged-5-14-years)</p>
+
+                  <h5 style="color: #20c997;">UNICEF</h5>
+                    <p><b>Format</b>: excel, csv.</p>
+                    <p><b>Metadata</b>: UNICEF provides metadata about the indicators it uses, giving additional information about them.</p>
+                    <p><b>URI</b>: https://data.unicef.org/resources/dataset/malnutrition-data/</p>
+                    <p><b>Provenance</b>: https://data.unicef.org/resources/dataset/malnutrition-data/</p>
+
+                  <h5 style="color: #20c997;">FAO</h5>
+                    <p><b>Format</b>: csv, xls.</p>
+                    <p><b>Metadata</b>: FAO provides many different categories of metadata including contacts, dates, description about the data, formal set of instructions formal provisions, policies of release, availability etc.</p>
+                    <p><b>URI</b>: https://www.fao.org/faostat/en/?#data/FS</p>
+                    <p><b>Provenance</b>: https://www.fao.org/faostat/en/?#data/FS</p>
+
+                  <h5 style="color: #20c997;">Our World in Data:</h5>
+                    <p><b>Format</b>: csv.</p>
+                    <p><b>Metadata</b>: Our World in Data provides metadata about considered time span and a general description about the topic of the dataset.</p>
+                    <p><b>URI</b>: https://ourworldindata.org/grapher/daily-per-capita-supply-of-calories</p>
+                    <p><b>Provenance</b>: https://ourworldindata.org/grapher/daily-per-capita-supply-of-calories</p>
+
+                  <h5 style="color: #20c997;">UN IGME:</h5>
+                    <p><b>Format</b>: csv.</p>
+                    <p><b>Metadata</b>: no metadata available..</p>
+                    <p><b>URI</b>: https://childmortality.org/data</p>
+                    <p><b>Provenance: https://childmortality.org/data</b></p>
+
+
                   <p>To see the entire explanatory table about technical analysis of datasets click <a style="border: none; color: black; padding:0; background-color: #ffffff;" target="_blank" href="metadata.html" onmouseover="this.style.color='#20c997'" onmouseout="this.style.color='black'">here</a>.</p>
 
                   <h4>Mashup and output datasets</h4>
@@ -438,7 +481,7 @@ CRE provides clear and action-oriented advice in a secure and confidential envir
 
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
-  
+
 
 </body>
 
