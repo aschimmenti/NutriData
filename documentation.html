@@ -267,6 +267,13 @@ CRE provides clear and action-oriented advice in a secure and confidential envir
                     So the organization share the same aim of UNICEF in supporting countries and to strengthen their capacities to make informed decisions.</p>
 
                   <h4>Technical analysis</h4>
+                  <p>The datasets have been modified according to well-established practices in data science: the programming language used, Python 3.8, 
+                    allows a wide, fast and simple interaction with .csv formats, a format that we have found to be the most common for the spread of open data. 
+                    We used the Regex, Pandas, Csv and Json libraries to manipulate this data. 
+                    To convert names e.g. of nations from natural language to ISO2 and ISO3 and vice versa we used the <a style="border: none; color: black; padding:0; background-color: #ffffff;" target="_blank" href="https://github.com/konstantinstadler/country_converter" onmouseover="this.style.color='#20c997'" onmouseout="this.style.color='black'">Country Converter</a> library. 
+                    The main strategy at the computational level was to convert the datasets into dictionaries to be able to manipulate them, 
+                    mash-up between them, and then return in .json and .csv format.
+                    For the visualizations we used the JavaScript language with the JQuery and <a style="border: none; color: black; padding:0; background-color: #ffffff;" target="_blank" href="https://www.amcharts.com" onmouseover="this.style.color='#20c997'" onmouseout="this.style.color='black'">Amcharts</a> libraries (versions 4 and 5).</p>
                   <p>To see the entire explanatory table about technical analysis of datasets click <a style="border: none; color: black; padding:0; background-color: #ffffff;" target="_blank" href="metadata.html" onmouseover="this.style.color='#20c997'" onmouseout="this.style.color='black'">here</a>.</p>
 
                   <h4>Mashup and output datasets</h4>
