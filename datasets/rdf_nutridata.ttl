@@ -208,7 +208,7 @@
 <datasets/foodsupplyadequacy.zip>   
     a dcat:Dataset;
     dct:identifier <datasets/foodsupplyadequacy.zip>;
-    dct:title "NutriData - Food Insecurity Indicators";
+    dct:title "NutriData - Food Security Indicators";
     dct:description "This dataset presents the core set of food security indicators. Indicators are classified along the four dimensions of food security -- availability, access, utilization and stability; data were filtered by the featured indicator "Average dietary energy supply adequacy (percent) (3-year average)";
     dct:modified "2022/01/03"^^xsd:date;
     dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI>;
@@ -223,7 +223,7 @@
     dct:language <http://publications.europa.eu/resource/authority/language/ENG>;
     dcat:keyword "diet";
     dcat:keyword "health";
-    dcat:keyword "food insecurity";
+    dcat:keyword "food security";
     dct:source <https://www.fao.org/faostat/en/?#data/FS>;
     dcat:startDate "2000"^^xsd:year;
     dcat:endDate "2020"^^xsd:year;
