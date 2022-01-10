@@ -1013,10 +1013,9 @@ ul.no-bullets {
 
 .index-ul {
     position: fixed;
-    width: fit-content;
     font-size: 1.1rem;
     color:rgba(75,197,184, 0.8);
-    margin: auto;
+    margin:auto;
     font-weight: bolder;
     z-index: 10;
 }

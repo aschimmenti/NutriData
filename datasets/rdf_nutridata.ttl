@@ -95,7 +95,7 @@
     dct:format <http://publications.europa.eu/resource/authority/file-type/CSV>;
     dct:format <http://publications.europa.eu/resource/authority/file-type/JSON>;
     dcat:accessURL <catalogue.html>;
-    dct:license <https://creativecommons.org/licenses/by-sa/4.0/>;
+    dct:license <https://creativecommons.org/licenses/by-sa/3.0/>;
     prov:wasDerivedFrom  <https://www.who.int/data/gho/data/indicators/indicator-details/GHO/mortality-rate-for-5-14-year-olds-(probability-of-dying-per-1000-children-aged-5-14-years)>;
     dcat:downloadURL <datasets/mortality.zip>;
     dcat:byteSize "133 KB";
