@@ -121,7 +121,7 @@ function getYears(option) {
     var circleSeries = chart.series.push(am5map.MapPolygonSeries.new(root, {}));
     circleSeries.mapPolygons.template.setAll({
       templateField: "polygonTemplate",
-      tooltipText: "{name}:{value}"
+      tooltipText: "{name}:{value}%"
     });
   
     // Define data
